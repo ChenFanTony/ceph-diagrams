@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-02-24T01:58:05.465Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36" etag="XP_3bPkUibb5gL2dGdRo" version="12.7.4" type="github">
+<mxfile host="www.draw.io" modified="2020-02-24T02:01:30.840Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36" etag="2yWkeM8enqWKVQTW0yIw" version="12.7.4" type="github">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="942" dy="1783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -87,6 +87,24 @@
         </mxCell>
         <mxCell id="QZcYWLK5-bO1K2HuPT2l-36" value="osd/watch.h" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
           <mxGeometry x="360" y="-430" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QZcYWLK5-bO1K2HuPT2l-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="QZcYWLK5-bO1K2HuPT2l-37" target="QZcYWLK5-bO1K2HuPT2l-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QZcYWLK5-bO1K2HuPT2l-37" value="librbd" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="-1060" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QZcYWLK5-bO1K2HuPT2l-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QZcYWLK5-bO1K2HuPT2l-38" target="QZcYWLK5-bO1K2HuPT2l-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QZcYWLK5-bO1K2HuPT2l-38" value="librados" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="-990" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QZcYWLK5-bO1K2HuPT2l-39" value="OSDC" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="-920" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QZcYWLK5-bO1K2HuPT2l-42" value="Librbd模块实现了RBD接口，其基于Librados实现了对RBD的基本操作。" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=14;horizontal=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="-1100" width="460" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
