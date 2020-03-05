@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-03-05T12:02:46.463Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="jTrJXC7RkfteyVZ5vlFJ" version="12.7.9" type="github">
+<mxfile host="www.draw.io" modified="2020-03-05T12:03:59.407Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="Ui42U1fW4KAzo4HyKi9F" version="12.7.9" type="github">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="942" dy="1783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -168,8 +168,20 @@
         <mxCell id="AA26ijId_HqbwC5AB4qU-26" value="ImageState:send_open_unlock" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="210" y="250" width="100" height="300" as="geometry" />
         </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AA26ijId_HqbwC5AB4qU-29" target="QWde-4axwzMw_tcs9vHi-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="AA26ijId_HqbwC5AB4qU-29" value="OpenRequest:send_v2_detect_header" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="420" y="250" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QWde-4axwzMw_tcs9vHi-19" target="QWde-4axwzMw_tcs9vHi-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-19" value="OpenRequest:send_v2_detect_header" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="630" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-21" value="OpenRequest:send_v2_detect_header" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1010" width="100" height="300" as="geometry" />
         </mxCell>
         <mxCell id="AA26ijId_HqbwC5AB4qU-30" value="&lt;div&gt;create async context callback&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Helvetica;horizontal=1;" parent="1" vertex="1">
           <mxGeometry x="180" y="340" width="170" height="20" as="geometry" />
