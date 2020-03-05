@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-03-05T08:33:51.858Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="Sakmq7-5A-nxp8ic9pTb" version="12.7.9" type="github">
+<mxfile host="www.draw.io" modified="2020-03-05T08:58:27.124Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="I1IuVLV3cTUjwpXLoSf2" version="12.7.9" type="github">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="942" dy="1783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -199,7 +199,7 @@
           <mxGeometry x="-1" relative="1" as="geometry" />
         </mxCell>
         <mxCell id="AA26ijId_HqbwC5AB4qU-41" value="ObjectOperation(osdc/objecter)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontFamily=Helvetica;align=center;" parent="1" vertex="1">
-          <mxGeometry x="700" y="250" width="100" height="300" as="geometry" />
+          <mxGeometry x="930" y="260" width="100" height="306" as="geometry" />
         </mxCell>
         <mxCell id="AA26ijId_HqbwC5AB4qU-42" value="librados：ObjectReadOperation op" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Helvetica;" parent="1" vertex="1">
           <mxGeometry x="399" y="336" width="200" height="20" as="geometry" />
@@ -215,6 +215,21 @@
         </mxCell>
         <mxCell id="QWde-4axwzMw_tcs9vHi-2" value="m_image_ctx-&amp;gt;md_ctx-&amp;gt;aio_operate" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
           <mxGeometry x="399" y="470" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-5" value="io_ctx_impl-&amp;gt;aio_operate_read" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="590" y="500" as="sourcePoint" />
+            <mxPoint x="750" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-6" value="3" style="resizable=0;html=1;align=left;verticalAlign=bottom;labelBackgroundColor=#ffffff;fontSize=10;" connectable="0" vertex="1" parent="QWde-4axwzMw_tcs9vHi-5">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-4" value="librados::IoCtx/IoCtxImpl" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="750" y="250" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-8" value="imageCtx() {data_ctx.dup() md_ctx() }&lt;br&gt;new io_ctx_impl" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="361" width="220" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
