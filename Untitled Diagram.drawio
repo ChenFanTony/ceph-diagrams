@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-03-06T02:40:55.878Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="dt4PYHOkm_sQqlnZmE_0" version="12.7.9" type="github">
+<mxfile host="www.draw.io" modified="2020-03-06T03:16:38.283Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="B4SWdPfEQkrhO-qZ3C2U" version="12.7.9" type="github">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="942" dy="1783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -210,11 +210,17 @@
         <mxCell id="AA26ijId_HqbwC5AB4qU-40" value="2" style="resizable=0;html=1;align=left;verticalAlign=bottom;labelBackgroundColor=#ffffff;fontSize=10;" parent="AA26ijId_HqbwC5AB4qU-39" connectable="0" vertex="1">
           <mxGeometry x="-1" relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="AA26ijId_HqbwC5AB4qU-41" value="OP: refcountedOjbect:osdc/objecter" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontFamily=Helvetica;align=center;" parent="1" vertex="1">
-          <mxGeometry x="950" y="250" width="100" height="306" as="geometry" />
+        <mxCell id="QWde-4axwzMw_tcs9vHi-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AA26ijId_HqbwC5AB4qU-41" target="QWde-4axwzMw_tcs9vHi-67">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QWde-4axwzMw_tcs9vHi-10" value="new op" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="AA26ijId_HqbwC5AB4qU-41">
-          <mxGeometry x="30" y="300" width="50" height="20" as="geometry" />
+        <mxCell id="AA26ijId_HqbwC5AB4qU-41" value="OP: refcountedOjbect:osdc/objecter" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontFamily=Helvetica;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="253" width="100" height="306" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-67" value="OP: refcountedOjbect:osdc/objecter" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontFamily=Helvetica;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="639" width="100" height="306" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-73" value="OP: refcountedOjbect:osdc/objecter" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fontFamily=Helvetica;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="1025" width="100" height="306" as="geometry" />
         </mxCell>
         <mxCell id="AA26ijId_HqbwC5AB4qU-42" value="librados：ObjectReadOperation op" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Helvetica;" parent="1" vertex="1">
           <mxGeometry x="399" y="336" width="200" height="20" as="geometry" />
@@ -353,13 +359,13 @@
           <mxGeometry x="768" y="1366" width="150" height="20" as="geometry" />
         </mxCell>
         <mxCell id="QWde-4axwzMw_tcs9vHi-56" value="ObjectOperation wr&lt;br&gt;wr.watch()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
-          <mxGeometry x="778" y="1398" width="120" height="30" as="geometry" />
+          <mxGeometry x="780" y="1410" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="QWde-4axwzMw_tcs9vHi-57" value="add_op(CEPH_OSD_OP_WATCH)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
-          <mxGeometry x="827" y="1428" width="200" height="20" as="geometry" />
+          <mxGeometry x="829" y="1440" width="200" height="20" as="geometry" />
         </mxCell>
         <mxCell id="QWde-4axwzMw_tcs9vHi-58" value="objecter-&amp;gt;linger_watch" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
-          <mxGeometry x="780" y="1467" width="140" height="20" as="geometry" />
+          <mxGeometry x="782" y="1479" width="140" height="20" as="geometry" />
         </mxCell>
         <mxCell id="QWde-4axwzMw_tcs9vHi-59" value="linger_watch -&amp;gt; _linger_submit -&amp;gt; _send_linger -&amp;gt; _op_submit" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;horizontal=1;" vertex="1" parent="1">
           <mxGeometry x="870" y="182" width="340" height="20" as="geometry" />
@@ -372,6 +378,15 @@
         </mxCell>
         <mxCell id="QWde-4axwzMw_tcs9vHi-64" value="&lt;span&gt;（&lt;/span&gt;&lt;font color=&quot;#dd1144&quot; face=&quot;Menlo, Monaco, Courier New, monospace&quot;&gt;&lt;span style=&quot;padding: 3px 4px ; border-radius: 3px ; background-color: rgb(247 , 247 , 249) ; border: 1px solid rgb(225 , 225 , 232) ; white-space: normal&quot;&gt;CEPH_MSG_OSD_OPREPLY&lt;/span&gt;&lt;/font&gt;&lt;span&gt;），会在ms_dispatch函数处理，最后调用：&lt;/span&gt;&lt;span style=&quot;padding: 3px 4px ; border-radius: 3px ; border: 1px solid rgb(225 , 225 , 232)&quot;&gt;handle_osd_op_reply&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
           <mxGeometry x="1070" y="222" width="540" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-65" value="lingerOp : RefCountedObject" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1386" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-66" value="请求objecter 发送op" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1510" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-72" value="new Op" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="1025" y="566" width="60" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
