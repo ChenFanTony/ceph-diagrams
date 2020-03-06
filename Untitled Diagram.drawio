@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-03-06T00:50:40.630Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="JoV3c9z8NoXZOC8mRaYd" version="12.7.9" type="github">
+<mxfile host="www.draw.io" modified="2020-03-06T01:49:23.108Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="RYTitkWX8Nrcx5p2weQs" version="12.7.9" type="github">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="942" dy="1783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -363,6 +363,18 @@
         </mxCell>
         <mxCell id="QWde-4axwzMw_tcs9vHi-58" value="objecter-&amp;gt;linger_watch" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
           <mxGeometry x="780" y="1467" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-59" value="linger_watch -&amp;gt; _linger_submit -&amp;gt; _send_linger -&amp;gt; _op_submit" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;horizontal=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="182" width="340" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-60" value="OSDC level: objecter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="866" y="162" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-62" value="OP提交后，会通过消息发送到rados集群，集群会通过messge和op的类型分类，经过一系列操作后最终会将watch客户端的信息落盘， 然后会发送回处理完成的消息，这个消息和以前一样" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="806" y="202" width="1000" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-64" value="&lt;span&gt;（&lt;/span&gt;&lt;font color=&quot;#dd1144&quot; face=&quot;Menlo, Monaco, Courier New, monospace&quot;&gt;&lt;span style=&quot;padding: 3px 4px ; border-radius: 3px ; background-color: rgb(247 , 247 , 249) ; border: 1px solid rgb(225 , 225 , 232) ; white-space: normal&quot;&gt;CEPH_MSG_OSD_OPREPLY&lt;/span&gt;&lt;/font&gt;&lt;span&gt;），会在ms_dispatch函数处理，最后调用：&lt;/span&gt;&lt;span style=&quot;padding: 3px 4px ; border-radius: 3px ; border: 1px solid rgb(225 , 225 , 232)&quot;&gt;handle_osd_op_reply&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="222" width="540" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
