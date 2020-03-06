@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-03-06T07:39:12.269Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="57bRNydLW4ajWr_fKzKQ" version="12.7.9" type="github">
+<mxfile host="www.draw.io" modified="2020-03-06T07:42:11.467Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="II6WZ6s4Q8DsOjkcmj3l" version="12.7.9" type="github">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="926" dy="1766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -430,6 +430,12 @@
         </mxCell>
         <mxCell id="QWde-4axwzMw_tcs9vHi-89" value="watch -&amp;gt; notify :&amp;nbsp;&lt;a href=&quot;https://blog.csdn.net/sefaxiaoji/article/details/89679926&quot;&gt;https://blog.csdn.net/sefaxiaoji/article/details/89679926&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
           <mxGeometry x="40" y="10" width="390" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-90" value="OSDC -&amp;gt;OSD" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="85" y="1687" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QWde-4axwzMw_tcs9vHi-91" value="&lt;span&gt;ReplicatedPG: do_osd_ops&lt;/span&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1740" width="100" height="300" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
