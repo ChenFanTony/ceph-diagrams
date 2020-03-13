@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2020-03-12T08:18:29.598Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="6zsAbnjlGqt64wTKKP7h" version="12.8.4" type="github" pages="2">
+<mxfile host="www.draw.io" modified="2020-03-13T02:58:56.270Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="zQdcgGryU3KyvViHkfLL" version="12.8.4" type="github" pages="2">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="942" dy="1783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -523,6 +523,18 @@
         </mxCell>
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-29" value="BlueStore::?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
           <mxGeometry x="160" y="690" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kMNqvGtwPKVbA8TeAmMw-30" value="osd_op_tp-&amp;gt;start&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="170" y="710" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kMNqvGtwPKVbA8TeAmMw-31" value="拿osd_op_tp 举例：" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="64" y="710" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kMNqvGtwPKVbA8TeAmMw-32" value="WorkThreadSharded:entry" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="119" y="770" width="140" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="kMNqvGtwPKVbA8TeAmMw-33" value="pool-&amp;gt; shardthreadpool_worker" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-32">
+          <mxGeometry x="-4" y="70" width="180" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
