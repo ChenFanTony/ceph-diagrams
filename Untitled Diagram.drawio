@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-03-23T10:58:17.703Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.87 Chrome/80.0.3987.87 Safari/537.36" etag="Ak1XqoyrBAfanwE7GH6j" version="12.8.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-03-23T11:41:36.947Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.87 Chrome/80.0.3987.87 Safari/537.36" etag="Mcc1eQJZdLgRkg10deMe" version="12.8.8" type="github" pages="3">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -509,8 +509,8 @@
             <mxPoint x="194" y="456.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kMNqvGtwPKVbA8TeAmMw-23" value="&amp;nbsp;主要更新时间蹉， 由tick per 5s， 来判断是否需要上报mon，报down" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
-          <mxGeometry x="27" y="482" width="380" height="20" as="geometry" />
+        <mxCell id="kMNqvGtwPKVbA8TeAmMw-23" value="&amp;nbsp;主要更新时间蹉， 由tick per 5s (tick 本身是1s)， 来判断是否需要上报mon，报down" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          <mxGeometry x="27" y="482" width="470" height="20" as="geometry" />
         </mxCell>
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-25" value="这里可以看到，如果不是is_healthy, 不会发送 reply" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
           <mxGeometry x="64" y="550" width="280" height="20" as="geometry" />
