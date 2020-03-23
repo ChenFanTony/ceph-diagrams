@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-03-16T08:35:55.614Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="05ZXZk7rYCVQr_0YM_8B" version="12.8.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-03-23T10:58:17.703Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.87 Chrome/80.0.3987.87 Safari/537.36" etag="Ak1XqoyrBAfanwE7GH6j" version="12.8.8" type="github" pages="3">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
-    <mxGraphModel dx="926" dy="1766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -441,7 +441,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="LUO3c7nQn7ibxB-PMMRD" name="Page-2">
-    <mxGraphModel dx="942" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-0" />
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-1" parent="kMNqvGtwPKVbA8TeAmMw-0" />
@@ -534,20 +534,20 @@
           <mxGeometry x="119" y="770" width="140" height="300" as="geometry" />
         </mxCell>
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-33" value="pool-&amp;gt; shardthreadpool_worker" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-32" vertex="1">
-          <mxGeometry x="-4" y="70" width="180" height="20" as="geometry" />
+          <mxGeometry x="-19" y="60" width="180" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="UGA_68Hb-PhQe4rkNcDF" name="Page-3">
-    <mxGraphModel dx="942" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="VI0_vHzAGvtdliNKrW1e-0" />
         <mxCell id="VI0_vHzAGvtdliNKrW1e-1" parent="VI0_vHzAGvtdliNKrW1e-0" />
         <mxCell id="VI0_vHzAGvtdliNKrW1e-2" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://docs.ceph.com/docs/master/_images/ditaa-2452ee22ef7d825a489a08e0b935453f2b06b0e6.png;" parent="VI0_vHzAGvtdliNKrW1e-1" vertex="1">
           <mxGeometry x="20" y="20" width="520" height="243" as="geometry" />
         </mxCell>
-        <mxCell id="TCwVAcdFtX1mXgoShyst-0" value="&lt;div&gt;bluestore的3种写路径&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1）写到新分配的区域。考虑ACID，因为此写不覆盖已有数据，即使中途断电，因为RocksDB中的元数据没有更新，不用担心ACID语义被破坏。RocksDB的元数据更新是在数据写之后做的。因而，日志是不需要的。在数据写完之后，元数据更新写入RocksDB；RocksDB本身支持事务，元数据更新作为RocksDB的事务提交即可。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2）写到Blob中的新位置。同理，日志是不需要的。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3）Deferred Writes（延迟写），只用于覆写（Overwrite）情况。只有覆写需要考虑日志问题。如果新写比块大小（min_alloc_size）更小，那么会将其数据与元数据合并写入到RocksDB中，之后异步地把数据搬到实际落盘位置；这就是日志了。如果新写比块大小更大，那么分割它，整块的部分写入新分配块中，即按（1）处理，；不足的部分按（3）中上种情况处理。&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
+        <mxCell id="TCwVAcdFtX1mXgoShyst-0" value="&lt;div&gt;bluestore的3种写路径&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1）写到新分配的区域。考虑ACID，因为此写不覆盖已有数据，即使中途断电，因为RocksDB中的元数据没有更新，不用担心ACID语义被破坏。RocksDB的元数据更新是在数据写之后做的。因而，日志是不需要的。在数据写完之后，元数据更新写入RocksDB；RocksDB本身支持事务，元数据更新作为RocksDB的事务提交即可。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2）写到Blob中的新位置。同理，日志是不需要的。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3）Deferred Writes（延迟写），只用于覆写（Overwrite）情况。只有覆写需要考虑日志问题。如果新写比块大小（min_alloc_size）更小，那么会将其数据与元数据合并写入到RocksDB中，之后异步地把数据搬到实际落盘位置；这就是日志了。如果新写比块大小更大，那么分割它，整块的部分写入新分配块中，即按（1）处理，；不足的部分按（3）中上种情况处理。&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="VI0_vHzAGvtdliNKrW1e-1" vertex="1">
           <mxGeometry x="30" y="280" width="1970" height="100" as="geometry" />
         </mxCell>
       </root>
