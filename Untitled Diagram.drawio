@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-03-24T02:20:12.112Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.87 Chrome/80.0.3987.87 Safari/537.36" etag="5SDJjdGk1gfAB_7fT9n1" version="12.8.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-03-25T02:57:56.091Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.87 Chrome/80.0.3987.87 Safari/537.36" etag="oBPUxrAGQS17R-jWydzn" version="12.8.8" type="github" pages="3">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -437,7 +437,7 @@
         <mxCell id="QWde-4axwzMw_tcs9vHi-91" value="&lt;span&gt;ReplicatedPG: do_osd_ops&lt;/span&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="140" y="1740" width="100" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="f2D4tx0j3AM3KsgB1ocr-1" value="架构:&amp;nbsp;&lt;a href=&quot;https://docs.ceph.com/docs/cuttlefish/architecture/&quot; style=&quot;font-size: medium ; white-space: normal&quot;&gt;https://docs.ceph.com/docs/cuttlefish/architecture/&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+        <mxCell id="f2D4tx0j3AM3KsgB1ocr-1" value="架构:&amp;nbsp;&lt;a href=&quot;https://docs.ceph.com/docs/cuttlefish/architecture/&quot; style=&quot;font-size: medium ; white-space: normal&quot;&gt;https://docs.ceph.com/docs/cuttlefish/architecture/&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="565" y="-1080" width="400" height="20" as="geometry" />
         </mxCell>
       </root>
@@ -540,7 +540,19 @@
           <mxGeometry x="-29" y="60" width="200" height="20" as="geometry" />
         </mxCell>
         <mxCell id="7AYOJUQR9DkGiWQduWnE-0" value="&lt;pre&gt;ShardedOpWQ::_process&lt;br&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-32" vertex="1">
-          <mxGeometry x="-15" y="90" width="170" height="40" as="geometry" />
+          <mxGeometry x="-14" y="80" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p69bb1HKEkcvPKbfrhvD-0" value="PGQueueable -&amp;gt; run" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-32">
+          <mxGeometry x="20.5" y="110" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p69bb1HKEkcvPKbfrhvD-1" value="boost::apply_visitor()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="160" y="900" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p69bb1HKEkcvPKbfrhvD-2" value="osd-&amp;gt;dequeue_op(pg, op, handle)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="170" y="920" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p69bb1HKEkcvPKbfrhvD-3" value="&lt;pre&gt;&lt;font size=&quot;3&quot;&gt;pg-&amp;gt;do_request(op, handle)&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="184" y="930" width="220" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
