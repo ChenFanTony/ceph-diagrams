@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-03-25T02:57:56.091Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.87 Chrome/80.0.3987.87 Safari/537.36" etag="oBPUxrAGQS17R-jWydzn" version="12.8.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-03-27T14:17:18.909Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36" etag="iEnwg3n1blWKbTFTd3Fg" version="12.8.6" type="github" pages="3">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
-    <mxGraphModel dx="1422" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="942" dy="1783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -444,7 +444,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="LUO3c7nQn7ibxB-PMMRD" name="Page-2">
-    <mxGraphModel dx="1422" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="942" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-0" />
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-1" parent="kMNqvGtwPKVbA8TeAmMw-0" />
@@ -542,23 +542,29 @@
         <mxCell id="7AYOJUQR9DkGiWQduWnE-0" value="&lt;pre&gt;ShardedOpWQ::_process&lt;br&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-32" vertex="1">
           <mxGeometry x="-14" y="80" width="170" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="p69bb1HKEkcvPKbfrhvD-0" value="PGQueueable -&amp;gt; run" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-32">
+        <mxCell id="p69bb1HKEkcvPKbfrhvD-0" value="PGQueueable -&amp;gt; run" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-32" vertex="1">
           <mxGeometry x="20.5" y="110" width="130" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="p69bb1HKEkcvPKbfrhvD-1" value="boost::apply_visitor()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+        <mxCell id="p69bb1HKEkcvPKbfrhvD-1" value="boost::apply_visitor()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
           <mxGeometry x="160" y="900" width="130" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="p69bb1HKEkcvPKbfrhvD-2" value="osd-&amp;gt;dequeue_op(pg, op, handle)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+        <mxCell id="p69bb1HKEkcvPKbfrhvD-2" value="osd-&amp;gt;dequeue_op(pg, op, handle)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
           <mxGeometry x="170" y="920" width="200" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="p69bb1HKEkcvPKbfrhvD-3" value="&lt;pre&gt;&lt;font size=&quot;3&quot;&gt;pg-&amp;gt;do_request(op, handle)&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+        <mxCell id="p69bb1HKEkcvPKbfrhvD-3" value="&lt;pre&gt;&lt;font size=&quot;3&quot;&gt;pg-&amp;gt;do_request(op, handle)&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
           <mxGeometry x="184" y="930" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2ataOce4NgDx4gBCqhOc-0" value="&lt;a href=&quot;https://pastebin.com/JvPrAyRk&quot;&gt;https://pastebin.com/JvPrAyRk&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="520" y="736" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2ataOce4NgDx4gBCqhOc-1" value="读写流程栈参考：" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="410" y="736" width="110" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="UGA_68Hb-PhQe4rkNcDF" name="Page-3">
-    <mxGraphModel dx="1422" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="942" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="VI0_vHzAGvtdliNKrW1e-0" />
         <mxCell id="VI0_vHzAGvtdliNKrW1e-1" parent="VI0_vHzAGvtdliNKrW1e-0" />
