@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-03-28T04:38:14.425Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36" etag="483s7jtOvGYokKyAyK5y" version="12.8.6" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-03-28T04:41:48.290Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36" etag="KZJRoo0JSIGiAf6dpX9_" version="12.8.6" type="github" pages="3">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="942" dy="1783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -591,6 +591,9 @@
         </mxCell>
         <mxCell id="oPB06JKxL257pPb7WIiM-3" value="do_write_small, do_write_big 根据min_alloc_size 决定" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
           <mxGeometry x="30" y="480" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="oPB06JKxL257pPb7WIiM-4" value="最后write 根据写的大小跟blocksize （一般4K）补0 写到磁盘" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
+          <mxGeometry x="30" y="508" width="340" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
