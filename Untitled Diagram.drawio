@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-08T07:46:01.164Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="a5zIeA_-Ayn71Zid_f7-" version="12.9.9" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-04-08T08:01:06.646Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="CJzQnrxNb-euaLmMVGls" version="12.9.9" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -554,7 +554,7 @@
         <mxCell id="pgLXL9qwCFjdlJhw90Io-0" value="&lt;a href=&quot;https://raw.githubusercontent.com/yangdongsheng/diagram-the-world/master/ceph/osd/objectstore/bluestore/bluestore.jpg&quot;&gt;https://raw.githubusercontent.com/yangdongsheng/diagram-the-world/master/ceph/osd/objectstore/bluestore/bluestore.jpg&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
           <mxGeometry x="520" y="790" width="660" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cygxmyzrjE5nL5AvxFnm-0" value="" style="group" vertex="1" connectable="0" parent="kMNqvGtwPKVbA8TeAmMw-1">
+        <mxCell id="cygxmyzrjE5nL5AvxFnm-0" value="" style="group" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1" connectable="0">
           <mxGeometry x="90" y="830" width="308.75" height="300" as="geometry" />
         </mxCell>
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-32" value="WorkThreadSharded:entry" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="cygxmyzrjE5nL5AvxFnm-0" vertex="1">
@@ -578,16 +578,16 @@
         <mxCell id="p69bb1HKEkcvPKbfrhvD-3" value="&lt;pre&gt;&lt;font size=&quot;3&quot;&gt;pg-&amp;gt;do_request(op, handle)&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="cygxmyzrjE5nL5AvxFnm-0" vertex="1">
           <mxGeometry x="75" y="160" width="220" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cygxmyzrjE5nL5AvxFnm-1" value="&lt;pre&gt;do_op-&amp;gt; execute_ctx -&amp;gt; issue_repop&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="cygxmyzrjE5nL5AvxFnm-0">
+        <mxCell id="cygxmyzrjE5nL5AvxFnm-1" value="&lt;pre&gt;do_op-&amp;gt; execute_ctx -&amp;gt; issue_repop&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="cygxmyzrjE5nL5AvxFnm-0" vertex="1">
           <mxGeometry x="93.75" y="180" width="260" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cygxmyzrjE5nL5AvxFnm-2" value="submit_transactions" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="cygxmyzrjE5nL5AvxFnm-0">
+        <mxCell id="cygxmyzrjE5nL5AvxFnm-2" value="submit_transactions" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="cygxmyzrjE5nL5AvxFnm-0" vertex="1">
           <mxGeometry x="123.75" y="210" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cygxmyzrjE5nL5AvxFnm-3" value="queue_transactions (接page3)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="cygxmyzrjE5nL5AvxFnm-0">
+        <mxCell id="cygxmyzrjE5nL5AvxFnm-3" value="queue_transactions (接page3)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="cygxmyzrjE5nL5AvxFnm-0" vertex="1">
           <mxGeometry x="144" y="250" width="180" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cygxmyzrjE5nL5AvxFnm-4" value="issue_op&amp;nbsp; (遍历backfill_shards, 发送op msg)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="cygxmyzrjE5nL5AvxFnm-0">
+        <mxCell id="cygxmyzrjE5nL5AvxFnm-4" value="issue_op&amp;nbsp; (遍历backfill_shards, 发送op msg)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="cygxmyzrjE5nL5AvxFnm-0" vertex="1">
           <mxGeometry x="130" y="230" width="250" height="20" as="geometry" />
         </mxCell>
       </root>
@@ -622,21 +622,37 @@
         <mxCell id="QsHbwvpdT8spC8FvS84u-0" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://raw.githubusercontent.com/yangdongsheng/diagram-the-world/master/ceph/osd/objectstore/bluestore/bluestore.jpg;" parent="VI0_vHzAGvtdliNKrW1e-1" vertex="1">
           <mxGeometry x="10" y="570" width="3735.68" height="3854.28" as="geometry" />
         </mxCell>
+        <mxCell id="I5Tr11XgQJzJwHpDaJhx-0" value="&lt;span style=&quot;color: rgb(77 , 77 , 77) ; font-family: &amp;#34;microsoft yahei&amp;#34; , &amp;#34;sf pro display&amp;#34; , &amp;#34;roboto&amp;#34; , &amp;#34;noto&amp;#34; , &amp;#34;arial&amp;#34; , &amp;#34;pingfang sc&amp;#34; , sans-serif ; font-size: 16px ; background-color: rgb(255 , 255 , 255)&quot;&gt;_do_alloc_write:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&lt;font color=&quot;#4d4d4d&quot; face=&quot;microsoft yahei, sf pro display, roboto, noto, arial, pingfang sc, sans-serif&quot;&gt;Ceph Bluestore Allocator分析&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px ; color: rgb(77 , 77 , 77) ; font-family: &amp;#34;microsoft yahei&amp;#34; , &amp;#34;sf pro display&amp;#34; , &amp;#34;roboto&amp;#34; , &amp;#34;noto&amp;#34; , &amp;#34;arial&amp;#34; , &amp;#34;pingfang sc&amp;#34; , sans-serif&quot;&gt;&amp;nbsp; 如IO流程所示，Bluestore需要新的空间分配时都需要通过_do_alloc_write函数调用Allocator类进行空间分配。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#4d4d4d&quot; face=&quot;microsoft yahei, sf pro display, roboto, noto, arial, pingfang sc, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&amp;nbsp; Allocator只负责在内存中将空闲空间标记为已分配，不关心磁盘空间使用情况的持久化，BlueFS将其记录在文件系统的日志中，Bluestore通过FreelistManager将其存储在k/v中，并在对象metadata中记录对象的磁盘空间信息。&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
+          <mxGeometry x="30" y="4485" width="1610" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="AEPrQI-EcCfnmK6v8A6W" name="Page-4">
+    
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      
       <root>
+        
         <mxCell id="wgk1S3ng-3xkgAyGcNxa-0" />
+        
         <mxCell id="wgk1S3ng-3xkgAyGcNxa-1" parent="wgk1S3ng-3xkgAyGcNxa-0" />
+        
         <mxCell id="wgk1S3ng-3xkgAyGcNxa-2" value="&lt;a href=&quot;https://www.spinics.net/lists/ceph-devel/msg24169.html&quot;&gt;https://www.spinics.net/lists/ceph-devel/msg24169.html&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
+          
           <mxGeometry x="140" y="110" width="310" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="wgk1S3ng-3xkgAyGcNxa-3" value="rbdmirror: 设计文档" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
+          
           <mxGeometry x="101" y="83" width="120" height="20" as="geometry" />
+          
         </mxCell>
+        
       </root>
+      
     </mxGraphModel>
+    
   </diagram>
 </mxfile>
