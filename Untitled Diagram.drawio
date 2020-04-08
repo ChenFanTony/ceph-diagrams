@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-08T07:38:41.736Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="5x7rc9f4T1B7tvM1BUL8" version="12.9.9" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-04-08T07:45:38.088Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="-f4yY4hNCfYQl7xSFrs2" version="12.9.9" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -555,10 +555,10 @@
           <mxGeometry x="520" y="790" width="660" height="20" as="geometry" />
         </mxCell>
         <mxCell id="cygxmyzrjE5nL5AvxFnm-0" value="" style="group" vertex="1" connectable="0" parent="kMNqvGtwPKVbA8TeAmMw-1">
-          <mxGeometry x="106.25" y="850" width="297.5" height="300" as="geometry" />
+          <mxGeometry x="100" y="830" width="308.75" height="300" as="geometry" />
         </mxCell>
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-32" value="WorkThreadSharded:entry" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="cygxmyzrjE5nL5AvxFnm-0" vertex="1">
-          <mxGeometry width="173.5" height="300" as="geometry" />
+          <mxGeometry width="235.75" height="300" as="geometry" />
         </mxCell>
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-33" value="pool-&amp;gt; ShardedThreadPool_worker" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-32" vertex="1">
           <mxGeometry x="-29" y="60" width="200" height="20" as="geometry" />
@@ -583,6 +583,12 @@
         </mxCell>
         <mxCell id="cygxmyzrjE5nL5AvxFnm-2" value="submit_transactions" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="cygxmyzrjE5nL5AvxFnm-0">
           <mxGeometry x="123.75" y="210" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cygxmyzrjE5nL5AvxFnm-3" value="queue_transactions" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="cygxmyzrjE5nL5AvxFnm-0">
+          <mxGeometry x="141" y="250" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cygxmyzrjE5nL5AvxFnm-4" value="issue_op&amp;nbsp; (遍历backfill_shards, 发送op msg)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="cygxmyzrjE5nL5AvxFnm-0">
+          <mxGeometry x="130" y="230" width="250" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
