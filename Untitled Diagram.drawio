@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-04-01T11:32:16.005Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.87 Chrome/80.0.3987.87 Safari/537.36" etag="HW5Hq27xHqPC76Q4-7Qd" version="12.8.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-04-08T02:29:33.043Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="FAKDMHWIxdansbWALf_Y" version="12.9.9" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
-    <mxGraphModel dx="1422" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="1940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -444,142 +444,276 @@
     </mxGraphModel>
   </diagram>
   <diagram id="LUO3c7nQn7ibxB-PMMRD" name="Page-2">
+    
     <mxGraphModel dx="1422" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      
       <root>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-0" />
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-1" parent="kMNqvGtwPKVbA8TeAmMw-0" />
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-3" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="130" y="110" width="110" height="400" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-2" value="OSD:heartbeat_thread" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="115" y="120" width="140" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-4" value="OSD:init()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="115" y="77" width="70" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="250" y="220" width="10" height="80" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-6" value="thread-&amp;gt;entry: osd-&amp;gt;heartbeat_entry()" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="kMNqvGtwPKVbA8TeAmMw-1" target="kMNqvGtwPKVbA8TeAmMw-5" edge="1">
+          
           <mxGeometry relative="1" as="geometry">
+            
             <mxPoint x="180" y="220" as="sourcePoint" />
+            
           </mxGeometry>
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-7" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;" parent="kMNqvGtwPKVbA8TeAmMw-1" source="kMNqvGtwPKVbA8TeAmMw-5" edge="1">
+          
           <mxGeometry relative="1" as="geometry">
+            
             <mxPoint x="180" y="296" as="targetPoint" />
+            
           </mxGeometry>
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-8" value="heartbeat_entry" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="314" y="110" width="146" height="300" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-10" value="send_message to all peer osd" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-8" vertex="1">
+          
           <mxGeometry x="-34" y="190" width="180" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-9" value="OSD heartbeat (heart异常标记down)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="64" y="19" width="210" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-11" value="back + front 地址，ping 会向这2个地方发，这个heartbeat 只是给peer osd发" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="280" y="320" width="420" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-12" value="OSD:&lt;span&gt;HeartbeatDispatcher&lt;/span&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="700" y="110" width="100" height="300" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-14" value="osd:heatbeat_dispatcher" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="690" y="350" width="150" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-15" value="handle_osd_ping(ping, ping_reply)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="700" y="377" width="200" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-16" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://img-blog.csdn.net/2018071611230290?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2phNTU4MjUyNjY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="500" y="147" width="520" height="173" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-17" value="1. 建立连接 2. ping 消息发送 3. ping 接受消息并处理（&lt;span style=&quot;text-align: left&quot;&gt;MOSDPing::PING)&amp;nbsp; 4. 回复（MOSDPing：PING_reply） 5. 源端接受并处理PING_reply&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="260" y="50" width="770" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-18" value="MOSDPing:ping" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="740" y="407" width="100" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-19" value="get_heartbeat_map-&amp;gt;is_healthy？" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="760" y="427" width="200" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-20" value="MOSDPing:PING_REPLY: return" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="750" y="447" width="190" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-21" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" parent="kMNqvGtwPKVbA8TeAmMw-1" edge="1">
+          
           <mxGeometry relative="1" as="geometry">
+            
             <mxPoint x="760" y="457" as="sourcePoint" />
+            
             <mxPoint x="194" y="456.5" as="targetPoint" />
+            
           </mxGeometry>
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-23" value="&amp;nbsp;主要更新时间蹉， 由tick per 5s (tick 本身是1s)， 来判断是否需要上报mon，报down" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="27" y="482" width="470" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-25" value="这里可以看到，如果不是is_healthy, 不会发送 reply" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="64" y="550" width="280" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-27" value="如何检测 health：轮询检测关键work thread是否有timeout， 主要包括 work：（heartbeat_handle_d）(heatbeatmap: add_worker(name, threader)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="64" y="585" width="790" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-28" value="&lt;span&gt;OSD::osd_op_tp,&lt;/span&gt;&lt;br&gt;&lt;div&gt;OSD::remove_tp,&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;OSD::recovery_tp,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;OSD::command_tp,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;OSD::peering_tp&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="160" y="605" width="120" height="80" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-29" value="BlueStore::?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="160" y="690" width="80" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-30" value="osd_op_tp-&amp;gt;start&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="170" y="710" width="110" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-31" value="拿osd_op_tp 举例：" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="64" y="710" width="120" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-32" value="WorkThreadSharded:entry" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="119" y="770" width="171" height="300" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-33" value="pool-&amp;gt; ShardedThreadPool_worker" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-32" vertex="1">
+          
           <mxGeometry x="-29" y="60" width="200" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="7AYOJUQR9DkGiWQduWnE-0" value="&lt;pre&gt;ShardedOpWQ::_process&lt;br&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-32" vertex="1">
+          
           <mxGeometry x="-14" y="80" width="170" height="40" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="p69bb1HKEkcvPKbfrhvD-0" value="PGQueueable -&amp;gt; run" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-32" vertex="1">
+          
           <mxGeometry x="20.5" y="110" width="130" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="p69bb1HKEkcvPKbfrhvD-1" value="boost::apply_visitor()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="160" y="900" width="130" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="p69bb1HKEkcvPKbfrhvD-2" value="osd-&amp;gt;dequeue_op(pg, op, handle)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="170" y="920" width="200" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="p69bb1HKEkcvPKbfrhvD-3" value="&lt;pre&gt;&lt;font size=&quot;3&quot;&gt;pg-&amp;gt;do_request(op, handle)&lt;br&gt;&lt;/font&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="184" y="930" width="220" height="40" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="2ataOce4NgDx4gBCqhOc-0" value="&lt;a href=&quot;https://pastebin.com/JvPrAyRk&quot;&gt;https://pastebin.com/JvPrAyRk&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="520" y="736" width="180" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="2ataOce4NgDx4gBCqhOc-1" value="读写流程栈参考：" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="410" y="736" width="110" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="2ataOce4NgDx4gBCqhOc-2" value="&lt;a href=&quot;https://github.com/yinminggang/yinminggang.github.io/blob/master/files/2018-03-17-gdbprof-analysis-ceph-performance/1-image-important-threads.txt&quot;&gt;https://github.com/yinminggang/yinminggang.github.io/blob/master/files/2018-03-17-gdbprof-analysis-ceph-performance/1-image-important-threads.txt&lt;/a&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="520" y="750" width="810" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="2ataOce4NgDx4gBCqhOc-3" value="&lt;a href=&quot;https://www.dazhuanlan.com/2019/12/19/5dfb2185b49dc/&quot;&gt;https://www.dazhuanlan.com/2019/12/19/5dfb2185b49dc/&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="510" y="724" width="320" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="2ataOce4NgDx4gBCqhOc-4" value="https://github.com/markhpc/gdbpmp.git" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="510" y="704" width="220" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="HNnUKTLC5rps5v6Oduu2-0" value="&lt;a href=&quot;https://blog.csdn.net/shuningzhang/article/details/90476326&quot;&gt;https://blog.csdn.net/shuningzhang/article/details/90476326&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
+          
           <mxGeometry x="520" y="770" width="330" height="20" as="geometry" />
+          
         </mxCell>
+        
         <mxCell id="pgLXL9qwCFjdlJhw90Io-0" value="&lt;a href=&quot;https://raw.githubusercontent.com/yangdongsheng/diagram-the-world/master/ceph/osd/objectstore/bluestore/bluestore.jpg&quot;&gt;https://raw.githubusercontent.com/yangdongsheng/diagram-the-world/master/ceph/osd/objectstore/bluestore/bluestore.jpg&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          
           <mxGeometry x="520" y="790" width="660" height="20" as="geometry" />
+          
         </mxCell>
+        
       </root>
+      
     </mxGraphModel>
+    
   </diagram>
   <diagram id="UGA_68Hb-PhQe4rkNcDF" name="Page-3">
-    <mxGraphModel dx="1422" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="VI0_vHzAGvtdliNKrW1e-0" />
         <mxCell id="VI0_vHzAGvtdliNKrW1e-1" parent="VI0_vHzAGvtdliNKrW1e-0" />
@@ -604,8 +738,22 @@
         <mxCell id="oPB06JKxL257pPb7WIiM-6" value="&lt;a href=&quot;http://www.yangguanjun.com/2018/09/06/ceph-blueStore-write-analyse/&quot;&gt;http://www.yangguanjun.com/2018/09/06/ceph-blueStore-write-analyse/&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="VI0_vHzAGvtdliNKrW1e-1" vertex="1">
           <mxGeometry x="20" y="280" width="400" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="QsHbwvpdT8spC8FvS84u-0" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://raw.githubusercontent.com/yangdongsheng/diagram-the-world/master/ceph/osd/objectstore/bluestore/bluestore.jpg;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
+        <mxCell id="QsHbwvpdT8spC8FvS84u-0" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://raw.githubusercontent.com/yangdongsheng/diagram-the-world/master/ceph/osd/objectstore/bluestore/bluestore.jpg;" parent="VI0_vHzAGvtdliNKrW1e-1" vertex="1">
           <mxGeometry x="40" y="570" width="3735.68" height="3854.28" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="AEPrQI-EcCfnmK6v8A6W" name="Page-4">
+    <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="wgk1S3ng-3xkgAyGcNxa-0" />
+        <mxCell id="wgk1S3ng-3xkgAyGcNxa-1" parent="wgk1S3ng-3xkgAyGcNxa-0" />
+        <mxCell id="wgk1S3ng-3xkgAyGcNxa-2" value="&lt;a href=&quot;https://www.spinics.net/lists/ceph-devel/msg24169.html&quot;&gt;https://www.spinics.net/lists/ceph-devel/msg24169.html&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
+          <mxGeometry x="140" y="110" width="310" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="wgk1S3ng-3xkgAyGcNxa-3" value="rbdmirror: 设计文档" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
+          <mxGeometry x="101" y="83" width="120" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
