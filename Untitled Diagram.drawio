@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-04-08T08:01:06.646Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="CJzQnrxNb-euaLmMVGls" version="12.9.9" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-04-15T13:02:20.129Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="fg5h0V5v7-kLK_2lBgeu" version="12.9.12" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
-    <mxGraphModel dx="1422" dy="1940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -444,7 +444,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="LUO3c7nQn7ibxB-PMMRD" name="Page-2">
-    <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-0" />
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-1" parent="kMNqvGtwPKVbA8TeAmMw-0" />
@@ -594,7 +594,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="UGA_68Hb-PhQe4rkNcDF" name="Page-3">
-    <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="VI0_vHzAGvtdliNKrW1e-0" />
         <mxCell id="VI0_vHzAGvtdliNKrW1e-1" parent="VI0_vHzAGvtdliNKrW1e-0" />
@@ -622,37 +622,45 @@
         <mxCell id="QsHbwvpdT8spC8FvS84u-0" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://raw.githubusercontent.com/yangdongsheng/diagram-the-world/master/ceph/osd/objectstore/bluestore/bluestore.jpg;" parent="VI0_vHzAGvtdliNKrW1e-1" vertex="1">
           <mxGeometry x="10" y="570" width="3735.68" height="3854.28" as="geometry" />
         </mxCell>
-        <mxCell id="I5Tr11XgQJzJwHpDaJhx-0" value="&lt;span style=&quot;color: rgb(77 , 77 , 77) ; font-family: &amp;#34;microsoft yahei&amp;#34; , &amp;#34;sf pro display&amp;#34; , &amp;#34;roboto&amp;#34; , &amp;#34;noto&amp;#34; , &amp;#34;arial&amp;#34; , &amp;#34;pingfang sc&amp;#34; , sans-serif ; font-size: 16px ; background-color: rgb(255 , 255 , 255)&quot;&gt;_do_alloc_write:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&lt;font color=&quot;#4d4d4d&quot; face=&quot;microsoft yahei, sf pro display, roboto, noto, arial, pingfang sc, sans-serif&quot;&gt;Ceph Bluestore Allocator分析&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px ; color: rgb(77 , 77 , 77) ; font-family: &amp;#34;microsoft yahei&amp;#34; , &amp;#34;sf pro display&amp;#34; , &amp;#34;roboto&amp;#34; , &amp;#34;noto&amp;#34; , &amp;#34;arial&amp;#34; , &amp;#34;pingfang sc&amp;#34; , sans-serif&quot;&gt;&amp;nbsp; 如IO流程所示，Bluestore需要新的空间分配时都需要通过_do_alloc_write函数调用Allocator类进行空间分配。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#4d4d4d&quot; face=&quot;microsoft yahei, sf pro display, roboto, noto, arial, pingfang sc, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&amp;nbsp; Allocator只负责在内存中将空闲空间标记为已分配，不关心磁盘空间使用情况的持久化，BlueFS将其记录在文件系统的日志中，Bluestore通过FreelistManager将其存储在k/v中，并在对象metadata中记录对象的磁盘空间信息。&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
+        <mxCell id="I5Tr11XgQJzJwHpDaJhx-0" value="&lt;span style=&quot;color: rgb(77 , 77 , 77) ; font-family: &amp;#34;microsoft yahei&amp;#34; , &amp;#34;sf pro display&amp;#34; , &amp;#34;roboto&amp;#34; , &amp;#34;noto&amp;#34; , &amp;#34;arial&amp;#34; , &amp;#34;pingfang sc&amp;#34; , sans-serif ; font-size: 16px ; background-color: rgb(255 , 255 , 255)&quot;&gt;_do_alloc_write:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&lt;font color=&quot;#4d4d4d&quot; face=&quot;microsoft yahei, sf pro display, roboto, noto, arial, pingfang sc, sans-serif&quot;&gt;Ceph Bluestore Allocator分析&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px ; color: rgb(77 , 77 , 77) ; font-family: &amp;#34;microsoft yahei&amp;#34; , &amp;#34;sf pro display&amp;#34; , &amp;#34;roboto&amp;#34; , &amp;#34;noto&amp;#34; , &amp;#34;arial&amp;#34; , &amp;#34;pingfang sc&amp;#34; , sans-serif&quot;&gt;&amp;nbsp; 如IO流程所示，Bluestore需要新的空间分配时都需要通过_do_alloc_write函数调用Allocator类进行空间分配。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#4d4d4d&quot; face=&quot;microsoft yahei, sf pro display, roboto, noto, arial, pingfang sc, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&amp;nbsp; Allocator只负责在内存中将空闲空间标记为已分配，不关心磁盘空间使用情况的持久化，BlueFS将其记录在文件系统的日志中，Bluestore通过FreelistManager将其存储在k/v中，并在对象metadata中记录对象的磁盘空间信息。&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="VI0_vHzAGvtdliNKrW1e-1" vertex="1">
           <mxGeometry x="30" y="4485" width="1610" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="AEPrQI-EcCfnmK6v8A6W" name="Page-4">
-    
-    <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      
+    <mxGraphModel dx="1422" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
-        
         <mxCell id="wgk1S3ng-3xkgAyGcNxa-0" />
-        
         <mxCell id="wgk1S3ng-3xkgAyGcNxa-1" parent="wgk1S3ng-3xkgAyGcNxa-0" />
-        
-        <mxCell id="wgk1S3ng-3xkgAyGcNxa-2" value="&lt;a href=&quot;https://www.spinics.net/lists/ceph-devel/msg24169.html&quot;&gt;https://www.spinics.net/lists/ceph-devel/msg24169.html&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
-          
+        <mxCell id="wgk1S3ng-3xkgAyGcNxa-2" value="&lt;a href=&quot;https://www.spinics.net/lists/ceph-devel/msg24169.html&quot;&gt;https://www.spinics.net/lists/ceph-devel/msg24169.html&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="wgk1S3ng-3xkgAyGcNxa-1" vertex="1">
           <mxGeometry x="140" y="110" width="310" height="20" as="geometry" />
-          
         </mxCell>
-        
-        <mxCell id="wgk1S3ng-3xkgAyGcNxa-3" value="rbdmirror: 设计文档" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
-          
+        <mxCell id="wgk1S3ng-3xkgAyGcNxa-3" value="rbdmirror: 设计文档" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="wgk1S3ng-3xkgAyGcNxa-1" vertex="1">
           <mxGeometry x="101" y="83" width="120" height="20" as="geometry" />
-          
         </mxCell>
-        
+        <mxCell id="WgdtJT_TpLFCVhR_3jtL-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="wgk1S3ng-3xkgAyGcNxa-1" source="WgdtJT_TpLFCVhR_3jtL-0" target="WgdtJT_TpLFCVhR_3jtL-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WgdtJT_TpLFCVhR_3jtL-0" value="PGBackend::build_pg_backend" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
+          <mxGeometry x="390" y="150" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WgdtJT_TpLFCVhR_3jtL-1" value="PGBackend" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
+          <mxGeometry x="100" y="190" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="WgdtJT_TpLFCVhR_3jtL-2" value="parent: PrimaryLogPG" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WgdtJT_TpLFCVhR_3jtL-1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="WgdtJT_TpLFCVhR_3jtL-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="WgdtJT_TpLFCVhR_3jtL-1">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="WgdtJT_TpLFCVhR_3jtL-4" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WgdtJT_TpLFCVhR_3jtL-1">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="WgdtJT_TpLFCVhR_3jtL-6" value="&lt;pre&gt;PrimaryLogPG: primary PG&lt;br/&gt;ReplicatedBackend: replica PG&lt;br/&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
+          <mxGeometry x="46" y="290" width="230" height="60" as="geometry" />
+        </mxCell>
       </root>
-      
     </mxGraphModel>
-    
   </diagram>
 </mxfile>
