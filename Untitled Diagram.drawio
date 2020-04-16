@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-16T02:24:32.116Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="0RAi53X7acUfSYiHf108" version="12.9.13" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-04-16T02:25:46.034Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="CAUh_vcV-nJSuFLLFOe1" version="12.9.13" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -637,6 +637,9 @@
         </mxCell>
         <mxCell id="zUdlVkVSjB8hbeC4wjbi-4" value="&lt;div&gt;&lt;br&gt;恢复流程:&lt;br&gt;ceph在进行故障恢复的时候会经过peering的过程，简要来说，peering就是对比各个副本上的pglog，然后根据副本上pglog的差异来构造missing列表，然后在恢复阶段就可以根据missing列表来进行恢复了。peering是按照pg为单位进行的，在进行peering的过程中，I/O请求是会挂起的，当进行完peering阶段进入recovery阶段时，I/O可以继续进行，不过当I/O请求命中了missing列表的时候，对应的这个待恢复的对象会优先进行恢复，当这个对象恢复完成后，再进行I/O的处理。&lt;/div&gt;&lt;div&gt;因为pglog记录数有限制，当对比各个副本上的pglog时，发现故障的副本已经落后太多了，这样就无法根据pglog来恢复了，所以这种情况下就只能全量恢复，称为backfill，坏盘坏机器或者集群扩容时也会触发backfill，这里不做介绍，后续单独一篇文章来进行分析。&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
           <mxGeometry x="84" y="1940" width="2540" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zUdlVkVSjB8hbeC4wjbi-5" value="全参考:&amp;nbsp;http://www.sysnote.org/2016/02/15/ceph-consistency/" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="85" y="2020" width="340" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
