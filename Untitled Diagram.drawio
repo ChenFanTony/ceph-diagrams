@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-16T02:16:12.656Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="PLDtnQrf7Wsk9D4KfnBI" version="12.9.13" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-04-16T02:16:56.986Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="zE68SB7duJAqBFZs6L9J" version="12.9.13" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -631,6 +631,9 @@
         </mxCell>
         <mxCell id="zUdlVkVSjB8hbeC4wjbi-2" value="每个副本上都维护了pglog，pglog里最重要的两个指针就是last_complete和last_update，正常情况下，每个副本上这两个指针都指向同一个位置，当出现机器重启、网络中断等故障时，&lt;br&gt;故障副本的这两个指针就会有所区别，以便于来记录副本间的差异。" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
           <mxGeometry x="84" y="1810" width="990" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zUdlVkVSjB8hbeC4wjbi-3" value="&lt;div&gt;为了便于说明ceph的一致性协议，先简要描述一下ceph的读写处理流程。&lt;/div&gt;&lt;div&gt;写处理流程：&lt;/div&gt;&lt;div&gt;1）client把写请求发到Primary OSD上，Primary OSD上将写请求序列化到一个事务中（在内存里），然后构造一条pglog记录，也序列化到这个事务中，然后将这个事务以directIO的方式异步写入journal，同时Primary OSD把写请求和pglog(pglog_entry是由primary生成)发送到Replicas上；&lt;/div&gt;&lt;div&gt;2）在Primary OSD将事务写到journal上后，会通过一系列的线程和回调处理，然后将这个事务里的数据写入filesystem（只是写到文件系统的缓存里，会有线程定期刷数据），这个事务里的pglog记录（也包括pginfo的last_complete和last_update）会写到leveldb，还有一些扩展属性相关的也在这个事务里，在遍历这个事务时也会写到leveldb；&lt;/div&gt;&lt;div&gt;3）在Replicas上，也是进行类似于Primary的动作，先写journal，写成功会给Primary发送一个committed ack，然后将这个事务里的数据写到filesystem，pglog与pginfo写到leveldb里，写完后会给Primary发送另外一个applied ack；&lt;/div&gt;&lt;div&gt;4）Primary在自己完成journal的写入时，以及在收到Replica的committed ack时都会检查是否多个副本都写入journal成功了，如果是则向client端发送ack通知写完成；Primary在自己完成事务写到文件系统和leveldb后，以及在收到replica的applied ack时都会检查是否多个副本都写文件系统成功，如果是则向client端发送ack通知数据可读；&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="84" y="1850" width="1820" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
