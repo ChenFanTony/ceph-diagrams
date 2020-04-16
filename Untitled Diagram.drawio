@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-16T02:02:53.337Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="zJnyAeokxIKyr0Cyotok" version="12.9.13" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-04-16T02:12:01.818Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="m_h05xzNbpfkq-B3Mt7D" version="12.9.13" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -595,6 +595,9 @@
         </mxCell>
         <mxCell id="cygxmyzrjE5nL5AvxFnm-4" value="issue_op&amp;nbsp; (遍历backfill_shards, 发送op msg)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="cygxmyzrjE5nL5AvxFnm-0" vertex="1">
           <mxGeometry x="130" y="230" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fjC88mhuhAhP7iqo_ECE-0" value="pg log 概论参考:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="74" y="1169" width="100" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
