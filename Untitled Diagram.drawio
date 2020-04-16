@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-16T02:15:36.196Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="KlaTsimIxUTF7zdGTo-m" version="12.9.13" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-04-16T02:16:12.656Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="PLDtnQrf7Wsk9D4KfnBI" version="12.9.13" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -628,6 +628,9 @@
         </mxCell>
         <mxCell id="zUdlVkVSjB8hbeC4wjbi-1" value="ceph使用版本控制的方式来标记一个PG内的每一次更新，每个版本包括一个(epoch，version)来组成：其中epoch是osdmap的版本，每当有OSD状态变化如增加删除等时，epoch就递增；&lt;br&gt;version是PG内每次更新操作的版本号，递增的，由PG内的Primary OSD进行分配的。" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
           <mxGeometry x="84" y="1760" width="1000" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zUdlVkVSjB8hbeC4wjbi-2" value="每个副本上都维护了pglog，pglog里最重要的两个指针就是last_complete和last_update，正常情况下，每个副本上这两个指针都指向同一个位置，当出现机器重启、网络中断等故障时，&lt;br&gt;故障副本的这两个指针就会有所区别，以便于来记录副本间的差异。" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="84" y="1810" width="990" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
