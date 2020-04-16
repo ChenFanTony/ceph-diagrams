@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-16T02:12:01.818Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="m_h05xzNbpfkq-B3Mt7D" version="12.9.13" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-04-16T02:12:44.440Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="pzfApup3Z74yn46CN0G_" version="12.9.13" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -599,6 +599,27 @@
         <mxCell id="fjC88mhuhAhP7iqo_ECE-0" value="pg log 概论参考:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
           <mxGeometry x="74" y="1169" width="100" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="aPFCmSgkS4HBd-kHOeT--0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="aPFCmSgkS4HBd-kHOeT--1" target="aPFCmSgkS4HBd-kHOeT--3" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aPFCmSgkS4HBd-kHOeT--1" value="PGBackend::build_pg_backend" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="394" y="1197" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="aPFCmSgkS4HBd-kHOeT--6" value="&lt;pre&gt;PrimaryLogPG: primary PG&lt;br&gt;ReplicatedBackend: replica PG&lt;br&gt;&lt;/pre&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="84" y="1337" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aPFCmSgkS4HBd-kHOeT--2" value="PGBackend" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="104" y="1237" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="aPFCmSgkS4HBd-kHOeT--3" value="parent: PrimaryLogPG" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="aPFCmSgkS4HBd-kHOeT--2">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="aPFCmSgkS4HBd-kHOeT--4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="aPFCmSgkS4HBd-kHOeT--2">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="aPFCmSgkS4HBd-kHOeT--5" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="aPFCmSgkS4HBd-kHOeT--2">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -647,27 +668,6 @@
         </mxCell>
         <mxCell id="wgk1S3ng-3xkgAyGcNxa-3" value="rbdmirror: 设计文档" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="wgk1S3ng-3xkgAyGcNxa-1" vertex="1">
           <mxGeometry x="101" y="83" width="120" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="WgdtJT_TpLFCVhR_3jtL-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="wgk1S3ng-3xkgAyGcNxa-1" source="WgdtJT_TpLFCVhR_3jtL-0" target="WgdtJT_TpLFCVhR_3jtL-2" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="WgdtJT_TpLFCVhR_3jtL-0" value="PGBackend::build_pg_backend" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="wgk1S3ng-3xkgAyGcNxa-1" vertex="1">
-          <mxGeometry x="390" y="150" width="180" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="WgdtJT_TpLFCVhR_3jtL-1" value="PGBackend" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="wgk1S3ng-3xkgAyGcNxa-1" vertex="1">
-          <mxGeometry x="100" y="190" width="160" height="86" as="geometry" />
-        </mxCell>
-        <mxCell id="WgdtJT_TpLFCVhR_3jtL-2" value="parent: PrimaryLogPG" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="WgdtJT_TpLFCVhR_3jtL-1" vertex="1">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="WgdtJT_TpLFCVhR_3jtL-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="WgdtJT_TpLFCVhR_3jtL-1" vertex="1">
-          <mxGeometry y="52" width="160" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="WgdtJT_TpLFCVhR_3jtL-4" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="WgdtJT_TpLFCVhR_3jtL-1" vertex="1">
-          <mxGeometry y="60" width="160" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="WgdtJT_TpLFCVhR_3jtL-6" value="&lt;pre&gt;PrimaryLogPG: primary PG&lt;br/&gt;ReplicatedBackend: replica PG&lt;br/&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="wgk1S3ng-3xkgAyGcNxa-1" vertex="1">
-          <mxGeometry x="46" y="290" width="230" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
