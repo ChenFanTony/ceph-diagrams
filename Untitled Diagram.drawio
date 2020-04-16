@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-16T02:12:44.440Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="pzfApup3Z74yn46CN0G_" version="12.9.13" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-04-16T02:13:19.879Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.149 Chrome/80.0.3987.149 Safari/537.36" etag="kVCKmZcUy3dv0M7GTqhP" version="12.9.13" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -619,6 +619,9 @@
         </mxCell>
         <mxCell id="aPFCmSgkS4HBd-kHOeT--5" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="aPFCmSgkS4HBd-kHOeT--2">
           <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="aPFCmSgkS4HBd-kHOeT--7" value="ceph 使用 pg log 来保证主副本之间一致性" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="79" y="1410" width="240" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
