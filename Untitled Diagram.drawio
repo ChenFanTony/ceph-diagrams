@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-29T02:39:18.778Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.163 Chrome/80.0.3987.163 Safari/537.36" etag="tDt-0b5gGsBMcvjkM7aC" version="12.9.14" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-04-29T03:12:02.020Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.163 Chrome/80.0.3987.163 Safari/537.36" etag="kerRUOGeKMfJ4hT8YZqQ" version="12.9.14" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -752,6 +752,12 @@
         </mxCell>
         <mxCell id="wgk1S3ng-3xkgAyGcNxa-3" value="rbdmirror: 设计文档" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="wgk1S3ng-3xkgAyGcNxa-1" vertex="1">
           <mxGeometry x="101" y="83" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="aZd6Gg8qLcnYA-rgzE9O-0" value="知识点:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
+          <mxGeometry x="107" y="156" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="aZd6Gg8qLcnYA-rgzE9O-1" value="PG中 OpSequencer : 用于同一个PG提交的多个事务进行保序" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
+          <mxGeometry x="90" y="190" width="340" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
