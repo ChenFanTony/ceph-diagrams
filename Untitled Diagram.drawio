@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-29T03:14:58.696Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.163 Chrome/80.0.3987.163 Safari/537.36" etag="KM6CxrzAkHmIWKvyw7ey" version="12.9.14" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-04-29T03:16:12.660Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.163 Chrome/80.0.3987.163 Safari/537.36" etag="Gf14Efect1SI8ZBzhu8X" version="12.9.14" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -744,6 +744,15 @@
         </mxCell>
         <mxCell id="AkEfv75BHe0Ki26GdJz5-3" value="TransContext: 一个事务中的多个操作" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
           <mxGeometry x="150" y="-996" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mdVLDTqRmvbwlIxgrEYP-0" value="执行相应事务到莫个阶段后, 执行回调来唤醒上层应用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
+          <mxGeometry x="137" y="-950" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mdVLDTqRmvbwlIxgrEYP-1" value="1) on_readable" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
+          <mxGeometry x="150" y="-920" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="mdVLDTqRmvbwlIxgrEYP-2" value="2) on_commit" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
+          <mxGeometry x="150" y="-840" width="90" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
