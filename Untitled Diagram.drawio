@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-30T02:59:16.167Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.163 Chrome/80.0.3987.163 Safari/537.36" etag="caEU3uOH_plYmV5EQuB_" version="12.9.14" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-05-06T03:03:22.658Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.163 Chrome/80.0.3987.163 Safari/537.36" etag="jeia2iGor_vEgFC29n3F" version="12.9.14" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -774,6 +774,9 @@
         </mxCell>
         <mxCell id="mdVLDTqRmvbwlIxgrEYP-15" value="&lt;span style=&quot;font-family: &amp;#34;helvetica neue&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif ; font-size: 13px&quot;&gt;Allocator只负责在内存中将空闲空间标记为已分配，最终磁盘空间使用情况的持久化操作，由Allocator的使用者负责，BlueFS将其记录在文件系统的日志中，BlueStore通过FreelistManager将其存储在k/v中，并在对象metadata中记录对象的磁盘空间信息。&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
           <mxGeometry x="100" y="-380" width="930" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="v2mOjfCifIHbUz4Kc1ao-0" value="blob 可以用来share clone操作的数据，通过refs 记录" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
+          <mxGeometry x="40" y="4980" width="290" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
