@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-05-06T07:04:20.341Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.163 Chrome/80.0.3987.163 Safari/537.36" etag="yrgMMhWE9ig_08uVQpaL" version="12.9.14" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-05-06T07:19:10.015Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.163 Chrome/80.0.3987.163 Safari/537.36" etag="a-Y3IGDagGM3zxOub6iX" version="12.9.14" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -781,8 +781,17 @@
         <mxCell id="v2mOjfCifIHbUz4Kc1ao-1" value="op_shardedwq 用来给同一个PG的op保序" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
           <mxGeometry x="40" y="5015" width="240" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="tgjx2norVOV6T8MbyYHh-0" value="ms_fast_dispatch&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
-          <mxGeometry x="50" y="5057" width="110" height="20" as="geometry" />
+        <mxCell id="tgjx2norVOV6T8MbyYHh-0" value="OSD:ms_fast_dispatch :" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
+          <mxGeometry x="47" y="5050" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tgjx2norVOV6T8MbyYHh-1" value="基于消息message 创建 OP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
+          <mxGeometry x="47" y="5080" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tgjx2norVOV6T8MbyYHh-2" value="将op 加入到 waiting_on_map" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
+          <mxGeometry x="70" y="5110" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tgjx2norVOV6T8MbyYHh-3" value="将op 派发到OSD的op_shardedwq 队列" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="VI0_vHzAGvtdliNKrW1e-1">
+          <mxGeometry x="80" y="5140" width="220" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
