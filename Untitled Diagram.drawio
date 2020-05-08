@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-05-08T03:04:20.436Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36" etag="t6JpHoef1UwgkhVU5eq6" version="13.0.8" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-05-08T03:14:37.602Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36" etag="7O3imzQ-Y4V9MSX-Uge7" version="13.0.8" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -828,6 +828,9 @@
         </mxCell>
         <mxCell id="wgk1S3ng-3xkgAyGcNxa-3" value="rbdmirror: 设计文档" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="wgk1S3ng-3xkgAyGcNxa-1" vertex="1">
           <mxGeometry x="101" y="83" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="83HScW0dbjd8I3jbmfjl-0" value="rbd block:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
+          <mxGeometry x="110" y="170" width="70" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
