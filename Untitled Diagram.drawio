@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-05-08T01:54:25.147Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36" etag="Or-qZ9ZFyQx1EaQ2npdv" version="13.0.8" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-05-08T02:35:23.257Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36" etag="-SAGL1TJHC353pffMW7E" version="13.0.8" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -561,7 +561,7 @@
           <mxGeometry x="520" y="790" width="660" height="20" as="geometry" />
         </mxCell>
         <mxCell id="cygxmyzrjE5nL5AvxFnm-0" value="" style="group" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1" connectable="0">
-          <mxGeometry x="90" y="830" width="308.75" height="300" as="geometry" />
+          <mxGeometry x="100" y="830" width="308.75" height="300" as="geometry" />
         </mxCell>
         <mxCell id="kMNqvGtwPKVbA8TeAmMw-32" value="WorkThreadSharded:entry" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="cygxmyzrjE5nL5AvxFnm-0" vertex="1">
           <mxGeometry width="235.75" height="300" as="geometry" />
@@ -641,8 +641,15 @@
         <mxCell id="zUdlVkVSjB8hbeC4wjbi-5" value="全参考:&amp;nbsp;http://www.sysnote.org/2016/02/15/ceph-consistency/" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="kMNqvGtwPKVbA8TeAmMw-1" vertex="1">
           <mxGeometry x="85" y="2020" width="340" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nhfjsQ0Lvc_Cs_mSCXNJ-0" value="do_request: PG处理op的第一步" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
-          <mxGeometry x="570" y="900" width="650" height="200" as="geometry" />
+        <mxCell id="nhfjsQ0Lvc_Cs_mSCXNJ-0" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;do_request: PG处理op的第一步&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;1. epoch 如果op携带Epoch更新，需要等待PG完成OSDmap同步后才能处理&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;2. op 能否丢弃 ， op链路断开&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;3. 是否客户端会重发&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;4. PG 如果不是active op会被阻塞&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
+          <mxGeometry x="570" y="900" width="650" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nhfjsQ0Lvc_Cs_mSCXNJ-2" value="" style="endArrow=classic;html=1;exitX=0.995;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="kMNqvGtwPKVbA8TeAmMw-1" source="p69bb1HKEkcvPKbfrhvD-3" target="nhfjsQ0Lvc_Cs_mSCXNJ-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="840" as="sourcePoint" />
+            <mxPoint x="750" y="790" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
