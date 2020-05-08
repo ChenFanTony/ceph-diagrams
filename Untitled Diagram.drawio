@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-05-08T02:55:43.985Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36" etag="_BjGQX34zv35vxOWEPLo" version="13.0.8" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-05-08T03:04:20.436Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36" etag="t6JpHoef1UwgkhVU5eq6" version="13.0.8" type="github" pages="4">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -653,6 +653,12 @@
         </mxCell>
         <mxCell id="nhfjsQ0Lvc_Cs_mSCXNJ-3" value="&amp;nbsp; &amp;nbsp;do_op:&lt;br&gt;&amp;nbsp; &amp;nbsp;1. 按照op操作类型， 有CEPH_OSD_RMW_FLAG_READ/WRITE/REWORDERED&lt;br&gt;&amp;nbsp; &amp;nbsp;2. op 合法校验， 不合法： PG不包含op携带对象等&lt;br&gt;&amp;nbsp; &amp;nbsp;3. 获取对象上下文， 创建Opcontext 对op 追踪， 通过execute_ctx 执行op" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="kMNqvGtwPKVbA8TeAmMw-1">
           <mxGeometry x="550" y="1029" width="650" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="nhfjsQ0Lvc_Cs_mSCXNJ-4" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="kMNqvGtwPKVbA8TeAmMw-1" source="cygxmyzrjE5nL5AvxFnm-1" target="nhfjsQ0Lvc_Cs_mSCXNJ-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="1060" as="sourcePoint" />
+            <mxPoint x="750" y="1010" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
