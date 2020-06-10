@@ -1,11 +1,29 @@
-<mxfile host="app.diagrams.net" modified="2020-06-10T02:11:30.334Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="G6qDNKHyvUqvCLhjPlNU" version="13.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-06-10T02:22:44.605Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="NRDMlBb5j18Y33cx7vK_" version="13.2.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="o9n_4Dxys3D3URiEiFxo-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.014;entryY=0.125;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="o9n_4Dxys3D3URiEiFxo-2" target="o9n_4Dxys3D3URiEiFxo-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o9n_4Dxys3D3URiEiFxo-13" value="bset_tree:&amp;nbsp;Sets of sorted keys - the real btree node - plus a binary search tree" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="270" y="140" width="430" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="o9n_4Dxys3D3URiEiFxo-14" value="&lt;pre&gt; 227 &lt;em class=&quot;comment&quot;&gt;         * set[0] is special; set[0]-&amp;gt;tree, set[0]-&amp;gt;prev and set[0]-&amp;gt;data point&lt;/em&gt;&lt;br&gt;&lt;a id=&quot;L228&quot; name=&quot;L228&quot;&gt;&lt;/a&gt; 228 &lt;em class=&quot;comment&quot;&gt;         * to the memory we have allocated for this btree node. Additionally,&lt;/em&gt;&lt;br&gt;&lt;a id=&quot;L229&quot; name=&quot;L229&quot;&gt;&lt;/a&gt; 229 &lt;em class=&quot;comment&quot;&gt;         * set[0]-&amp;gt;data points to the entire btree node as it exists on disk.&lt;/em&gt;&lt;/pre&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="260" y="170" width="620" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="o9n_4Dxys3D3URiEiFxo-15" value="BTREE:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="60" y="49" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="o9n_4Dxys3D3URiEiFxo-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.007;entryY=0.154;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="o9n_4Dxys3D3URiEiFxo-9" target="o9n_4Dxys3D3URiEiFxo-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o9n_4Dxys3D3URiEiFxo-25" value="bkey-&amp;gt; ptr 这边会根据set 中 cache 个数来分， 最多8个， 默认是1个" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry y="390" width="380" height="20" as="geometry" />
+        </mxCell>
         <mxCell id="o9n_4Dxys3D3URiEiFxo-0" value="btree_keys" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="80" y="250" width="140" height="78" as="geometry" />
+          <mxGeometry x="290" y="250" width="140" height="78" as="geometry" />
         </mxCell>
         <mxCell id="o9n_4Dxys3D3URiEiFxo-1" value="+ nsets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o9n_4Dxys3D3URiEiFxo-0">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
@@ -14,28 +32,13 @@
           <mxGeometry y="52" width="140" height="26" as="geometry" />
         </mxCell>
         <mxCell id="o9n_4Dxys3D3URiEiFxo-8" value="bset_tree" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="320" y="250" width="140" height="52" as="geometry" />
+          <mxGeometry x="530" y="250" width="140" height="52" as="geometry" />
         </mxCell>
         <mxCell id="o9n_4Dxys3D3URiEiFxo-9" value="+ bset: data" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o9n_4Dxys3D3URiEiFxo-8">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="o9n_4Dxys3D3URiEiFxo-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.014;entryY=0.125;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="o9n_4Dxys3D3URiEiFxo-2" target="o9n_4Dxys3D3URiEiFxo-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="o9n_4Dxys3D3URiEiFxo-13" value="bset_tree:&amp;nbsp;Sets of sorted keys - the real btree node - plus a binary search tree" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="60" y="140" width="430" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="o9n_4Dxys3D3URiEiFxo-14" value="&lt;pre&gt; 227 &lt;em class=&quot;comment&quot;&gt;         * set[0] is special; set[0]-&amp;gt;tree, set[0]-&amp;gt;prev and set[0]-&amp;gt;data point&lt;/em&gt;&lt;br&gt;&lt;a id=&quot;L228&quot; name=&quot;L228&quot;&gt;&lt;/a&gt; 228 &lt;em class=&quot;comment&quot;&gt;         * to the memory we have allocated for this btree node. Additionally,&lt;/em&gt;&lt;br&gt;&lt;a id=&quot;L229&quot; name=&quot;L229&quot;&gt;&lt;/a&gt; 229 &lt;em class=&quot;comment&quot;&gt;         * set[0]-&amp;gt;data points to the entire btree node as it exists on disk.&lt;/em&gt;&lt;/pre&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="50" y="170" width="620" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="o9n_4Dxys3D3URiEiFxo-15" value="BTREE:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="60" y="49" width="60" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="o9n_4Dxys3D3URiEiFxo-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.007;entryY=0.154;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="o9n_4Dxys3D3URiEiFxo-9" target="o9n_4Dxys3D3URiEiFxo-16">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="o9n_4Dxys3D3URiEiFxo-16" value="bset: on_disk  (btree_node)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="550" y="250" width="140" height="78" as="geometry" />
+          <mxGeometry x="760" y="250" width="140" height="78" as="geometry" />
         </mxCell>
         <mxCell id="o9n_4Dxys3D3URiEiFxo-17" value="csum, magic,seq, keys" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o9n_4Dxys3D3URiEiFxo-16">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
@@ -43,8 +46,23 @@
         <mxCell id="o9n_4Dxys3D3URiEiFxo-18" value="union {bkey, _u64}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o9n_4Dxys3D3URiEiFxo-16">
           <mxGeometry y="52" width="140" height="26" as="geometry" />
         </mxCell>
+        <mxCell id="o9n_4Dxys3D3URiEiFxo-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.014;entryY=0.141;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="o9n_4Dxys3D3URiEiFxo-27" target="o9n_4Dxys3D3URiEiFxo-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o9n_4Dxys3D3URiEiFxo-26" value="btree" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="60" y="250" width="140" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="o9n_4Dxys3D3URiEiFxo-27" value="btree_keys keys" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o9n_4Dxys3D3URiEiFxo-26">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="o9n_4Dxys3D3URiEiFxo-28" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o9n_4Dxys3D3URiEiFxo-26">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="o9n_4Dxys3D3URiEiFxo-29" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o9n_4Dxys3D3URiEiFxo-26">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
         <mxCell id="o9n_4Dxys3D3URiEiFxo-21" value="bkey" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="80" y="400" width="140" height="104" as="geometry" />
+          <mxGeometry x="60" y="420" width="140" height="104" as="geometry" />
         </mxCell>
         <mxCell id="o9n_4Dxys3D3URiEiFxo-22" value="u64 high" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o9n_4Dxys3D3URiEiFxo-21">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
@@ -54,9 +72,6 @@
         </mxCell>
         <mxCell id="o9n_4Dxys3D3URiEiFxo-24" value="u64 ptr[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o9n_4Dxys3D3URiEiFxo-21">
           <mxGeometry y="78" width="140" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="o9n_4Dxys3D3URiEiFxo-25" value="bkey-&amp;gt; ptr 这边会根据set 中 cache 个数来分， 最多8个， 默认是1个" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="10" y="370" width="380" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
