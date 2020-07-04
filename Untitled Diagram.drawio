@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-04T14:12:52.947Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="gb72cAqE1aEufUE29cwz" version="13.3.8" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2020-07-04T14:19:52.959Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="OCI-6k3h8-eXevQJvS8X" version="13.3.8" type="github" pages="5">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="942" dy="1734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -853,6 +853,9 @@
         <mxCell id="OctCkgpykkoSyc3ByBwZ-0" value="ms_dispatch" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
           <mxGeometry x="335" y="360" width="130" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="M_XEjah7YfgT0JLW8BSW-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wgk1S3ng-3xkgAyGcNxa-1" source="M_XEjah7YfgT0JLW8BSW-1" target="M_XEjah7YfgT0JLW8BSW-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="M_XEjah7YfgT0JLW8BSW-1" value="on_commit-&amp;gt; consume_map" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
           <mxGeometry x="335" y="550" width="130" height="40" as="geometry" />
         </mxCell>
@@ -894,6 +897,12 @@
         </mxCell>
         <mxCell id="M_XEjah7YfgT0JLW8BSW-0" value="queue_transaction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
           <mxGeometry x="335" y="490" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="M_XEjah7YfgT0JLW8BSW-5" value="pg-&amp;gt;queue_null" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
+          <mxGeometry x="335" y="610" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="M_XEjah7YfgT0JLW8BSW-7" value="&lt;div&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;helvetica neue&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;stheiti&amp;#34; , &amp;#34;microsoft yahei&amp;#34; ; font-size: 16.96px&quot;&gt;PGMap 是由 Monitor 维护的所有 PG 的状态，每个 OSD 都会掌握自己所拥有的 PG 状态，&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica neue&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;stheiti&amp;#34; , &amp;#34;microsoft yahei&amp;#34; ; font-size: 16.96px ; background-color: rgb(255 , 255 , 255)&quot;&gt;PG 迁移需要 Monitor 作出决定然后反映到 PGMap 上，相关 OSD 会得到通知去改变其 PG&lt;br&gt;&amp;nbsp;状态。在一个新的 OSD 启动并加入 OSDMap 后，Monitor 会通知这个OSD需要创建和维护&lt;br&gt;的 PG ，当存在多个副本时，PG 的 Primary OSD 会主动与 Replicated 角色的 PG 通信并且&lt;br&gt;沟通 PG 的状态，其中包括 PG 的最近历史记录。&lt;br&gt;通常来说，新的 OSD 会得到其他 PG 的全部数据然后逐渐达成一致，或者 OSD 已经存在该&lt;br&gt;&amp;nbsp;PG 信息，那么 Primary PG 会比较该 PG 的历史记录然后达成 PG 的信息的一致。这个过程&lt;br&gt;称为 Peering ，它是一个由 Primary PG OSD 发起的“讨论”，多个同样掌握这个 PG 的 OSD &lt;br&gt;相互之间比较 PG 信息和历史来最终协商达成一致。&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
+          <mxGeometry x="510" y="170" width="710" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
