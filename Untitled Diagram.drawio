@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-04T13:57:10.023Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="5vS_HokPHGvh1Ow8407M" version="13.3.8" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2020-07-04T14:12:52.947Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="gb72cAqE1aEufUE29cwz" version="13.3.8" type="github" pages="5">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="942" dy="1734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -847,8 +847,14 @@
         <mxCell id="eSvjpz5_DGomMEQMM3NY-0" value="&lt;a href=&quot;https://docs.ceph.com/docs/master/rbd/rbd-mirroring/&quot;&gt;https://docs.ceph.com/docs/master/rbd/rbd-mirroring/&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="wgk1S3ng-3xkgAyGcNxa-1" vertex="1">
           <mxGeometry x="145" y="130" width="300" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="M_XEjah7YfgT0JLW8BSW-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="wgk1S3ng-3xkgAyGcNxa-1" source="OctCkgpykkoSyc3ByBwZ-0" target="M_XEjah7YfgT0JLW8BSW-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="OctCkgpykkoSyc3ByBwZ-0" value="ms_dispatch" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
           <mxGeometry x="335" y="360" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="M_XEjah7YfgT0JLW8BSW-1" value="on_commit-&amp;gt; consume_map" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
+          <mxGeometry x="335" y="550" width="130" height="40" as="geometry" />
         </mxCell>
         <mxCell id="OctCkgpykkoSyc3ByBwZ-1" value="MON" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
           <mxGeometry x="50" y="360" width="120" height="40" as="geometry" />
@@ -874,6 +880,9 @@
         <mxCell id="OctCkgpykkoSyc3ByBwZ-6" value="OSD map 改变， 状态变化" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
           <mxGeometry x="36" y="270" width="160" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="M_XEjah7YfgT0JLW8BSW-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="wgk1S3ng-3xkgAyGcNxa-1" source="OctCkgpykkoSyc3ByBwZ-7" target="M_XEjah7YfgT0JLW8BSW-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="OctCkgpykkoSyc3ByBwZ-7" value="handle_osp_map" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
           <mxGeometry x="335" y="430" width="135" height="40" as="geometry" />
         </mxCell>
@@ -883,34 +892,24 @@
             <mxPoint x="399.5" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="M_XEjah7YfgT0JLW8BSW-0" value="queue_transaction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
+          <mxGeometry x="335" y="490" width="135" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="AbguI6AOd0qzJXsDyeR7" name="Page-5">
-    
-    <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      
+    <mxGraphModel dx="942" dy="565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
-        
         <mxCell id="gNk1rxYhN-MciHJDgp1_-0" />
-        
         <mxCell id="gNk1rxYhN-MciHJDgp1_-1" parent="gNk1rxYhN-MciHJDgp1_-0" />
-        
         <mxCell id="gNk1rxYhN-MciHJDgp1_-2" value="性能：" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="gNk1rxYhN-MciHJDgp1_-1" vertex="1">
-          
           <mxGeometry x="140" y="57" width="50" height="20" as="geometry" />
-          
         </mxCell>
-        
         <mxCell id="gNk1rxYhN-MciHJDgp1_-3" value="&lt;a href=&quot;http://www.yangguanjun.com/2017/05/24/Ceph-PGLock-RWState/&quot;&gt;http://www.yangguanjun.com/2017/05/24/Ceph-PGLock-RWState/&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="gNk1rxYhN-MciHJDgp1_-1" vertex="1">
-          
           <mxGeometry x="110" y="100" width="370" height="20" as="geometry" />
-          
         </mxCell>
-        
       </root>
-      
     </mxGraphModel>
-    
   </diagram>
 </mxfile>
