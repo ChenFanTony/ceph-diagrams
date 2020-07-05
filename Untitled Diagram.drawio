@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-05T01:57:30.659Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="OVPxTv72Unqsf0oRfIh3" version="13.3.8" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2020-07-05T02:02:44.779Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="UYwyn4w8cPZ0k-E_vH5e" version="13.3.8" type="github" pages="5">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="942" dy="1734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -943,8 +943,8 @@
         <mxCell id="M_XEjah7YfgT0JLW8BSW-22" value="PGstate:状态机" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
           <mxGeometry x="910" y="270" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="M_XEjah7YfgT0JLW8BSW-23" value="由monitor 发送event， 由osd 把pg 创建出来&lt;br&gt;创建PG的时候，会初始化一个recovery_machine, 继承boost:statechart" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
-          <mxGeometry x="880" y="292" width="390" height="30" as="geometry" />
+        <mxCell id="M_XEjah7YfgT0JLW8BSW-23" value="由monitor 发送event， 由osd 把pg 创建出来&lt;br&gt;创建PG的时候，会初始化一个recovery_machine, 继承boost:statechart:state_machine" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
+          <mxGeometry x="880" y="292" width="470" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
