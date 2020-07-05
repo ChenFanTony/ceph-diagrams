@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-05T02:06:39.521Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="cDSDTx4VFJ9uKo0Gcydn" version="13.3.8" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2020-07-05T02:11:52.174Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="PcZZGz60cZ5c0io_vTsI" version="13.3.8" type="github" pages="5">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="942" dy="1734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -951,6 +951,9 @@
         </mxCell>
         <mxCell id="M_XEjah7YfgT0JLW8BSW-25" value="recovery_state.handle_event(Evt) -&amp;gt; machine.process_event() 交由状态机处理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
           <mxGeometry x="880" y="360" width="430" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="M_XEjah7YfgT0JLW8BSW-26" value="代码： src/osd/pg.h #1905" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="wgk1S3ng-3xkgAyGcNxa-1">
+          <mxGeometry x="890" y="380" width="160" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
