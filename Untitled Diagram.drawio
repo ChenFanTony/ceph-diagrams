@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-07T03:02:40.932Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="f23RcE5WHsUfegj3C7U7" version="13.3.9" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2020-07-07T03:06:26.299Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="dqP11YkQYlf8UpAKhEI9" version="13.3.9" type="github" pages="5">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1891" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -999,7 +999,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="AbguI6AOd0qzJXsDyeR7" name="Page-5">
-    <mxGraphModel dx="1422" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="459" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="gNk1rxYhN-MciHJDgp1_-0" />
         <mxCell id="gNk1rxYhN-MciHJDgp1_-1" parent="gNk1rxYhN-MciHJDgp1_-0" />
@@ -1008,17 +1008,6 @@
         </mxCell>
         <mxCell id="gNk1rxYhN-MciHJDgp1_-3" value="&lt;a href=&quot;http://www.yangguanjun.com/2017/05/24/Ceph-PGLock-RWState/&quot;&gt;http://www.yangguanjun.com/2017/05/24/Ceph-PGLock-RWState/&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="gNk1rxYhN-MciHJDgp1_-1" vertex="1">
           <mxGeometry x="110" y="100" width="370" height="20" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="pcKqNZUQ8Fu16YI3kKVu" name="Page-6">
-    <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="-gL7YX9U3QGC7f0CCwaG-0" />
-        <mxCell id="-gL7YX9U3QGC7f0CCwaG-1" parent="-gL7YX9U3QGC7f0CCwaG-0" />
-        <mxCell id="-gL7YX9U3QGC7f0CCwaG-2" value="KRBD:&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="-gL7YX9U3QGC7f0CCwaG-1">
-          <mxGeometry x="99" y="62" width="60" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
