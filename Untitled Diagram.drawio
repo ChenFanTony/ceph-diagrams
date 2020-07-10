@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-07-07T03:06:26.299Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="dqP11YkQYlf8UpAKhEI9" version="13.3.9" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2020-07-10T07:37:44.200Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="5TJDCWtVFmmmriAxsk6y" version="13.3.9" type="github" pages="5">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
-    <mxGraphModel dx="1422" dy="1891" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="1940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -828,7 +828,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="AEPrQI-EcCfnmK6v8A6W" name="osd pg transaction">
-    <mxGraphModel dx="1422" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="wgk1S3ng-3xkgAyGcNxa-0" />
         <mxCell id="wgk1S3ng-3xkgAyGcNxa-1" parent="wgk1S3ng-3xkgAyGcNxa-0" />
@@ -842,7 +842,7 @@
           <mxGeometry x="110" y="170" width="70" height="20" as="geometry" />
         </mxCell>
         <mxCell id="83HScW0dbjd8I3jbmfjl-1" value="rbd_id.name&amp;nbsp; data: 记录image 名称到image id的单向映射关系&lt;br&gt;rbd_header.id&amp;nbsp; omap/xattr; 记录image 所支持的功能特性， 容量，配置等&lt;br&gt;rbd_object_map.id data： 记录组成image的所有数据对象的存在状态" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="wgk1S3ng-3xkgAyGcNxa-1" vertex="1">
-          <mxGeometry x="110" y="200" width="400" height="50" as="geometry" />
+          <mxGeometry x="180" y="190" width="400" height="50" as="geometry" />
         </mxCell>
         <mxCell id="eSvjpz5_DGomMEQMM3NY-0" value="&lt;a href=&quot;https://docs.ceph.com/docs/master/rbd/rbd-mirroring/&quot;&gt;https://docs.ceph.com/docs/master/rbd/rbd-mirroring/&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="wgk1S3ng-3xkgAyGcNxa-1" vertex="1">
           <mxGeometry x="145" y="130" width="300" height="20" as="geometry" />
@@ -999,7 +999,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="AbguI6AOd0qzJXsDyeR7" name="Page-5">
-    <mxGraphModel dx="868" dy="459" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="gNk1rxYhN-MciHJDgp1_-0" />
         <mxCell id="gNk1rxYhN-MciHJDgp1_-1" parent="gNk1rxYhN-MciHJDgp1_-0" />
