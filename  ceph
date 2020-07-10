@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-10T07:42:43.837Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="xnjlamtADgyeNx9WpNuL" version="13.4.1" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-07-10T07:43:11.165Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="7QcoJOM4tk4ZhLtlSeFy" version="13.4.1" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -97,6 +97,9 @@
         <mxCell id="3nQj0UOYoZfFufUBl6tc-1" parent="3nQj0UOYoZfFufUBl6tc-0" />
         <mxCell id="3nQj0UOYoZfFufUBl6tc-2" value="ceph rbd client" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
           <mxGeometry x="60" y="50" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="3nQj0UOYoZfFufUBl6tc-3" value="radosclient" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+          <mxGeometry x="80" y="90" width="70" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
