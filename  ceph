@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-10T08:04:23.758Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="J0LXB79LJn7jHJVg-vfe" version="13.4.1" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-07-10T08:05:34.210Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="9dHvqsN8_feTw_6NMpG8" version="13.4.1" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -118,6 +118,9 @@
         </mxCell>
         <mxCell id="3nQj0UOYoZfFufUBl6tc-9" value="librbd:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
           <mxGeometry x="70" y="3102" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="3nQj0UOYoZfFufUBl6tc-10" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;librbd::RBD rbd;&lt;/div&gt;&lt;div&gt;const char *image_name = &quot;rumboo&quot;;&lt;/div&gt;&lt;div&gt;uint64_t init_size = (uint64_t) 200 * 1024 * 1024; //映像初始化大小200MB&lt;/div&gt;&lt;div&gt;uint64_t features = 1; //影响feature个数&lt;/div&gt;&lt;div&gt;int order = 22; //默认值为22, 即4MB (1 &amp;lt;&amp;lt; 22)&lt;/div&gt;&lt;div&gt;ret = rbd.create2(io_ctx, image_name, init_size, features, &amp;amp;order);&lt;/div&gt;&lt;div&gt;if (ret &amp;lt; 0) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; std::cerr &amp;lt;&amp;lt; &quot;couldn&#39;t create rbd image! err &quot; &amp;lt;&amp;lt; ret &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; ret = EXIT_FAILURE;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; io_ctx.close(); //关闭I/O上下文&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; rados.shutdown(); //断开集群连接&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; return EXIT_FAILURE;&lt;/div&gt;&lt;div&gt;} else {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; std::cout &amp;lt;&amp;lt; &quot;We just created an rbd image&quot; &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+          <mxGeometry x="75" y="3140" width="400" height="230" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
