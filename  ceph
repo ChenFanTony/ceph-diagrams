@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-10T07:43:28.786Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="1AWBEFLULTNKn7l11_V9" version="13.4.1" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-07-10T07:50:02.756Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="ctrSNowQbKafsXp-aBD2" version="13.4.1" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -100,6 +100,9 @@
         </mxCell>
         <mxCell id="3nQj0UOYoZfFufUBl6tc-3" value="RadosClient" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
           <mxGeometry x="75" y="90" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="3nQj0UOYoZfFufUBl6tc-4" value="&lt;div&gt;librados主要的类是:&lt;/div&gt;&lt;div&gt;librados::Rados&amp;nbsp; &amp;nbsp; 负责初始化集群、读取配置、连接集群&lt;/div&gt;&lt;div&gt;librados::IoCtx&amp;nbsp; &amp;nbsp; 负责创建IO上线文环境&lt;/div&gt;&lt;div&gt;librados::bufferlist&amp;nbsp; 负责读写缓存&lt;/div&gt;&lt;div&gt;librbd最主要的两个类是&lt;/div&gt;&lt;div&gt;LIBRADOS::rbd&amp;nbsp; 主要负责创建、删除、克隆映像等操作，&lt;/div&gt;&lt;div&gt;LIBRADOS::image&amp;nbsp; 负责映像的读写等操作。&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+          <mxGeometry x="70" y="130" width="320" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
