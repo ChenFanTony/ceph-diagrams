@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-13T06:25:38.221Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="3--6OkuZJD9a3gyw1vKm" version="13.4.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-07-13T06:27:16.591Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="gVNhFf3gsmLwbJ9_Qcit" version="13.4.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -170,6 +170,9 @@
         </mxCell>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-11" value="根据osdmap 和 pgid,&amp;nbsp;_make_pg -&amp;gt;&amp;nbsp;new PrimaryLogPG 创建pg" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
           <mxGeometry x="880" y="210" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-16" value=" 接下来我们看一下tp_osd_tp线程是如何处理分片中的请求，线程处理的核心函数是ShardedOpWQ::_process，其调用栈如下：" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
+          <mxGeometry x="60" y="580" width="700" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
