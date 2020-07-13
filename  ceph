@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-13T06:42:35.327Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="sLkcGgueNbYF1iaSNWr8" version="13.4.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-07-13T06:46:49.819Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="Ky51RRseau7loPW4iihY" version="13.4.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -181,7 +181,7 @@
           <mxGeometry x="70" y="30" width="280" height="20" as="geometry" />
         </mxCell>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-19" value="&lt;p&gt;&lt;font color=&quot;#333333&quot; style=&quot;font-size: 12px&quot;&gt;PG在执行op上下文时，会使用事务的方式保证多个修改操作的原子性。另外事务具有多个层级，PG中使用PGTransaction；&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;color: rgb(51 , 51 , 51)&quot;&gt;底层ObjectStore中会使用ObjectStore::Transaction进行进一步封装。&lt;/span&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
-          <mxGeometry x="880" y="660" width="670" height="60" as="geometry" />
+          <mxGeometry x="880" y="650" width="670" height="60" as="geometry" />
         </mxCell>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="QtuDEevEZMd4Cmv_G88j-1" source="QtuDEevEZMd4Cmv_G88j-20" target="QtuDEevEZMd4Cmv_G88j-21">
           <mxGeometry relative="1" as="geometry" />
@@ -193,32 +193,35 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-21" value="execute_ctx(ctx);" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
-          <mxGeometry x="1115" y="640" width="110" height="20" as="geometry" />
+          <mxGeometry x="1115" y="630" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="QtuDEevEZMd4Cmv_G88j-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.508;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="QtuDEevEZMd4Cmv_G88j-1" source="QtuDEevEZMd4Cmv_G88j-23" target="QtuDEevEZMd4Cmv_G88j-27">
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="QtuDEevEZMd4Cmv_G88j-1" source="QtuDEevEZMd4Cmv_G88j-23">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1170" y="840" as="targetPoint" />
+            <mxPoint x="1170" y="770" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-23" value="new PGTransaction -&amp;gt;&amp;nbsp;prepare_transaction (这个里面会直接处理同步 read 请求)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
-          <mxGeometry x="950" y="740" width="440" height="20" as="geometry" />
+          <mxGeometry x="950" y="720" width="440" height="20" as="geometry" />
         </mxCell>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="QtuDEevEZMd4Cmv_G88j-1" source="QtuDEevEZMd4Cmv_G88j-27" target="QtuDEevEZMd4Cmv_G88j-28">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1170" y="910" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="QtuDEevEZMd4Cmv_G88j-1" source="QtuDEevEZMd4Cmv_G88j-27" target="QtuDEevEZMd4Cmv_G88j-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-27" value="do_osd_ops (CEPH_OSD_OP_READ,&amp;nbsp;CEPH_OSD_OP_WRITE)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
-          <mxGeometry x="990" y="810" width="360" height="20" as="geometry" />
+          <mxGeometry x="990" y="770" width="360" height="20" as="geometry" />
         </mxCell>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="QtuDEevEZMd4Cmv_G88j-1" source="QtuDEevEZMd4Cmv_G88j-28" target="QtuDEevEZMd4Cmv_G88j-31">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-28" value="&lt;div&gt;do_read :&amp;nbsp; pgbackend-&amp;gt;objects_read_sync(&lt;span&gt;soid, op.extent.offset, op.extent.length, op.flags, &amp;amp;osd_op.outdata);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;do_write :&amp;nbsp; t-&amp;gt;write(soid, op.extent.offset, op.extent.length, osd_op.indata, op.flags);&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
-          <mxGeometry x="870" y="870" width="600" height="30" as="geometry" />
+          <mxGeometry x="870" y="820" width="600" height="30" as="geometry" />
         </mxCell>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-31" value="最后将 pg trancation 封装成 object 的transaction generate_transaction, 最后调用 queue_transaction" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
-          <mxGeometry x="895" y="940" width="550" height="20" as="geometry" />
+          <mxGeometry x="895" y="880" width="550" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
