@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-13T05:25:48.983Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="trdqL95BnRZvuMDnQlrq" version="13.4.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-07-13T05:31:19.103Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="N7kVKAv81eI4vQx7SB8A" version="13.4.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -142,8 +142,8 @@
         <mxCell id="QtuDEevEZMd4Cmv_G88j-3" value="&lt;div&gt;ceph_osd.cc:main()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; \-OSD::init()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; |-OSD::load_pgs()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; |&amp;nbsp; &amp;nbsp;|-ObjectStore::list_collections()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; |&amp;nbsp; &amp;nbsp;|-OSD::_open_lock_pg()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; |&amp;nbsp; &amp;nbsp;|-ObjectStore::open_collections()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; |&amp;nbsp; &amp;nbsp;\-PG::read_state()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; \-osd_op_tp.start()&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
           <mxGeometry x="100" y="175" width="230" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="QtuDEevEZMd4Cmv_G88j-4" value="&lt;div&gt;在挂载后端ObjectStore后，OSD模块调用load_pgs开始加载后端ObjectStore中保存的pg对象。这里先枚举ObjectStore中所有的pg&lt;/div&gt;&lt;div&gt;，例如对于bluestore，将查找CURRENT目录下的所有子目录(每个子目录代表一个pg)；然后打开该pg(生成具体的PG对象，如PrimaryLogPG)&lt;br&gt;并读取pg状态信息。&amp;nbsp;&lt;span&gt;启动osd_op_tp线程池，开始对op_shardedwq中的消息进行处理。&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
-          <mxGeometry x="70" y="110" width="770" height="50" as="geometry" />
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-4" value="&lt;div&gt;在挂载后端ObjectStore后，OSD模块调用load_pgs开始加载后端ObjectStore中保存的pg对象。这里先枚举ObjectStore中所有的pg&lt;/div&gt;&lt;div&gt;，例如对于bluestore，将遍历racksdb 中 (PREFIX_COLL) 的对象；然后打开该pg(生成具体的PG对象，如PrimaryLogPG)&lt;br&gt;并读取pg状态信息。&amp;nbsp;&lt;span&gt;启动osd_op_tp线程池，开始对op_shardedwq中的消息进行处理。&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
+          <mxGeometry x="70" y="110" width="700" height="50" as="geometry" />
         </mxCell>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-5" value="请求分发:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
           <mxGeometry x="79" y="327" width="70" height="20" as="geometry" />
