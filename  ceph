@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-13T05:20:42.450Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="jq9KSyvL8mJsqGKzLac7" version="13.4.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-07-13T05:25:48.983Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="trdqL95BnRZvuMDnQlrq" version="13.4.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -150,6 +150,9 @@
         </mxCell>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-6" value="&lt;span style=&quot;color: rgb(51 , 51 , 51) ; font-family: , , &amp;#34;lucida grande&amp;#34; , &amp;#34;hiragino sans gb&amp;#34; , &amp;#34;hiragino sans gb w3&amp;#34; , &amp;#34;microsoft yahei&amp;#34; , &amp;#34;wenquanyi micro hei&amp;#34; , sans-serif ; font-size: 14px&quot;&gt;我们先来分析一下ms_pipe_read中的请求消息分发流程，其栈心处理函数为OSD::ms_fast_dispatch：&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
           <mxGeometry x="79" y="347" width="640" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-7" value="&lt;div&gt;OSD::ms_fast_dispatch()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; |-OpTracker::create_request()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; \-OSD::dispatch_session_waiting()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; \-OSD::enqueue_op()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; \-ShardedOpWQ::queue()&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
+          <mxGeometry x="120" y="380" width="210" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
