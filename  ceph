@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-13T06:28:40.317Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="T09IYMzlVHhI2V9wB1J8" version="13.4.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-07-13T06:30:51.505Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="pZT5oSPNxmnmjRHQu3Q2" version="13.4.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -179,6 +179,9 @@
         </mxCell>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-18" value="参考:&amp;nbsp;&lt;a href=&quot;https://rootw.github.io/2018/04/RBD-OSD-2/&quot;&gt;https://rootw.github.io/2018/04/RBD-OSD-2/&lt;/a&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
           <mxGeometry x="70" y="30" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-19" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 14px ; color: rgb(51 , 51 , 51)&quot;&gt;PG在执行op上下文时，会使用事务的方式保证多个修改操作的原子性。另外事务具有多个层级，PG中使用PGTransaction；&lt;/span&gt;&lt;/div&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;底层ObjectStore中会使用ObjectStore::Transaction进行进一步封装。&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
+          <mxGeometry x="70" y="840" width="780" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
