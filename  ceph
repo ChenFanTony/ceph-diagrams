@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-13T07:10:29.328Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="pLF7kineh-BhKTyuHaGB" version="13.4.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-07-13T07:11:15.394Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="S7psDXWyFrc9Dp1nKUu8" version="13.4.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -226,26 +226,26 @@
         <mxCell id="QtuDEevEZMd4Cmv_G88j-39" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
           <mxGeometry x="960" y="307" width="50" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="QtuDEevEZMd4Cmv_G88j-40" value="cluster_messager" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-40" value="cluster_messager" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
           <mxGeometry x="1030" y="295" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="QtuDEevEZMd4Cmv_G88j-41" value="client_messager" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-41" value="client_messager" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
           <mxGeometry x="1030" y="315" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="QtuDEevEZMd4Cmv_G88j-42" value="store" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
-          <mxGeometry x="1035" y="335" width="40" height="20" as="geometry" />
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-42" value="store" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
+          <mxGeometry x="1031" y="335" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="QtuDEevEZMd4Cmv_G88j-43" value="osd_op_tp" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
-          <mxGeometry x="1032" y="355" width="70" height="20" as="geometry" />
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-43" value="osd_op_tp" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
+          <mxGeometry x="1030" y="355" width="70" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="QtuDEevEZMd4Cmv_G88j-44" value="op_shardwq" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-44" value="op_shardwq" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
           <mxGeometry x="1030" y="380" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="QtuDEevEZMd4Cmv_G88j-45" value="osdmap" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
-          <mxGeometry x="1032" y="400" width="60" height="20" as="geometry" />
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-45" value="osdmap" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
+          <mxGeometry x="1030" y="400" width="60" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="QtuDEevEZMd4Cmv_G88j-46" value="pgmap" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
-          <mxGeometry x="1040" y="420" width="50" height="20" as="geometry" />
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-46" value="pgmap" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
+          <mxGeometry x="1031" y="420" width="50" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
