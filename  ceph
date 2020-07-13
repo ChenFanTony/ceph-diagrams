@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-13T07:11:15.394Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="S7psDXWyFrc9Dp1nKUu8" version="13.4.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-07-13T07:14:59.381Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="T5XpU-lOT_hGZCE-9df4" version="13.4.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -86,6 +86,9 @@
         </mxCell>
         <mxCell id="avSVtnbKmz9LwsWl66Yq-3" value="krbd:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="avSVtnbKmz9LwsWl66Yq-1" vertex="1">
           <mxGeometry x="64" y="56" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Ymubw6qkoupGxx5M1Guj-0" value="&lt;div&gt;IO下发：rbd_request_fn&lt;/div&gt;&lt;div&gt;  IO处理的核心函数是rbd_request_fn，其调用栈大体如下：&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="avSVtnbKmz9LwsWl66Yq-1">
+          <mxGeometry x="950" y="56" width="350" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
