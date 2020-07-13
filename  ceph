@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-13T06:46:49.819Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="Ky51RRseau7loPW4iihY" version="13.4.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-07-13T06:48:09.138Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="rKHkQbl3kDHfXoZST70l" version="13.4.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -214,14 +214,11 @@
         <mxCell id="QtuDEevEZMd4Cmv_G88j-27" value="do_osd_ops (CEPH_OSD_OP_READ,&amp;nbsp;CEPH_OSD_OP_WRITE)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
           <mxGeometry x="990" y="770" width="360" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="QtuDEevEZMd4Cmv_G88j-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="QtuDEevEZMd4Cmv_G88j-1" source="QtuDEevEZMd4Cmv_G88j-28" target="QtuDEevEZMd4Cmv_G88j-31">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-28" value="&lt;div&gt;do_read :&amp;nbsp; pgbackend-&amp;gt;objects_read_sync(&lt;span&gt;soid, op.extent.offset, op.extent.length, op.flags, &amp;amp;osd_op.outdata);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;do_write :&amp;nbsp; t-&amp;gt;write(soid, op.extent.offset, op.extent.length, osd_op.indata, op.flags);&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
           <mxGeometry x="870" y="820" width="600" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="QtuDEevEZMd4Cmv_G88j-31" value="最后将 pg trancation 封装成 object 的transaction generate_transaction, 最后调用 queue_transaction" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
-          <mxGeometry x="895" y="880" width="550" height="20" as="geometry" />
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-31" value="最后将 pg trancation 封装成 object 的transaction generate_transaction, 最后调用 queue_transaction -&amp;gt; txc_proc_stat" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
+          <mxGeometry x="855" y="870" width="630" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
