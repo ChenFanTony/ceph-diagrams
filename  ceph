@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-13T06:30:51.505Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="pZT5oSPNxmnmjRHQu3Q2" version="13.4.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-07-13T06:32:33.618Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="pu9xYuewFzXC48SqwHrn" version="13.4.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -182,6 +182,15 @@
         </mxCell>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-19" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 14px ; color: rgb(51 , 51 , 51)&quot;&gt;PG在执行op上下文时，会使用事务的方式保证多个修改操作的原子性。另外事务具有多个层级，PG中使用PGTransaction；&lt;/span&gt;&lt;/div&gt;&lt;font color=&quot;#333333&quot;&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;底层ObjectStore中会使用ObjectStore::Transaction进行进一步封装。&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
           <mxGeometry x="70" y="840" width="780" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="QtuDEevEZMd4Cmv_G88j-1" source="QtuDEevEZMd4Cmv_G88j-20" target="QtuDEevEZMd4Cmv_G88j-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-20" value="do_op 当前op以及op操作的对象生成一个context,&amp;nbsp;new OpContext" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
+          <mxGeometry x="990" y="580" width="360" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QtuDEevEZMd4Cmv_G88j-21" value="execute_ctx(ctx);" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="QtuDEevEZMd4Cmv_G88j-1">
+          <mxGeometry x="1115" y="640" width="110" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
