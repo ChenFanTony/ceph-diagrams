@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-31T05:29:24.391Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="_fA7uBziOAS7Wkc4-f7a" version="13.5.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-07-31T10:03:11.934Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="DOVhe7hTradQUlqjkJw3" version="13.5.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="bcache">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -127,7 +127,7 @@
             <mxRectangle x="895" y="1120" width="210" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZrB4824951tR8lwVxA4--7" value="Messenger *messenger;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ZrB4824951tR8lwVxA4--6">
+        <mxCell id="ZrB4824951tR8lwVxA4--7" value="bool _dispatch(Message *m);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ZrB4824951tR8lwVxA4--6">
           <mxGeometry y="26" width="150" height="26" as="geometry" />
         </mxCell>
         <mxCell id="ZrB4824951tR8lwVxA4--12" value="Messenger *messenger;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ZrB4824951tR8lwVxA4--6">
