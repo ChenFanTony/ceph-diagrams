@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-31T10:38:54.122Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="MLbUwb3Rx4Ry-RWf83dd" version="13.5.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-07-31T10:39:26.280Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="upRentFmGaSpZwqu8yOI" version="13.5.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="bcache">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -228,11 +228,14 @@
         <mxCell id="qDSHYbJKPOCbUfd6kdmb-16" value="objecter-&amp;gt;prepare_mutate_op&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
           <mxGeometry x="935" y="1790" width="180" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-19" value="_calc_target" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
-          <mxGeometry x="1000" y="1850" width="80" height="20" as="geometry" />
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-19" value="Objecter:_calc_target" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+          <mxGeometry x="990" y="1850" width="130" height="20" as="geometry" />
         </mxCell>
         <mxCell id="qDSHYbJKPOCbUfd6kdmb-20" value="将ObjectOperation 封装成OP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
           <mxGeometry x="1115" y="1790" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-21" value="计算 OSD" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+          <mxGeometry x="1120" y="1850" width="70" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
