@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-31T10:08:10.158Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="PRaEQUFh95yp8fBm1SVV" version="13.5.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-07-31T10:09:43.730Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="rF2mOqS-vqqmBS_b_Qxm" version="13.5.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="bcache">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -203,6 +203,9 @@
         </mxCell>
         <mxCell id="qDSHYbJKPOCbUfd6kdmb-6" value="&lt;div&gt;/创建objecter并初始化&lt;/div&gt;&lt;div&gt;&amp;nbsp; objecter = new (std::nothrow) Objecter()&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
           <mxGeometry x="1000" y="1510" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-9" value="RadosClient::mon_command_async" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+          <mxGeometry x="890" y="1590" width="210" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
