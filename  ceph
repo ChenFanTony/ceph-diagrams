@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-31T10:09:58.214Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="ORDz9C8enta5QNxYXk3o" version="13.5.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-07-31T10:11:04.942Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="7NTuy7SqJLhaeRXfosBO" version="13.5.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="bcache">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -209,6 +209,9 @@
         </mxCell>
         <mxCell id="qDSHYbJKPOCbUfd6kdmb-10" value="RadosClient::osd_command" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
           <mxGeometry x="895" y="1620" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-11" value="client 给mon osd 命令:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+          <mxGeometry x="880" y="1570" width="140" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
