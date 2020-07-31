@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-31T10:39:40.721Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="FoyXM_cIYrSK1XdAkptw" version="13.5.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-07-31T10:41:30.103Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="OqeESAP-K9TK7JSG7KqH" version="13.5.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="bcache">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -236,6 +236,24 @@
         </mxCell>
         <mxCell id="qDSHYbJKPOCbUfd6kdmb-21" value="计算目标 OSD" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
           <mxGeometry x="1120" y="1850" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-22" value="Objecter:: _get_session()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+          <mxGeometry x="990" y="1880" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-23" value="获得目标osd 的连接" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+          <mxGeometry x="1150" y="1880" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-24" value="Objecter:: prepare_osd_op" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+          <mxGeometry x="990" y="1910" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-25" value="准备请求消息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+          <mxGeometry x="1150" y="1910" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-26" value="Objecter:: send_op()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+          <mxGeometry x="995" y="1940" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-27" value="发送消息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+          <mxGeometry x="1140" y="1940" width="60" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
