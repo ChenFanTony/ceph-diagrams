@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-07-31T10:41:30.103Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="OqeESAP-K9TK7JSG7KqH" version="13.5.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-08-03T02:29:59.560Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="Z2Lzi-yYsJmwTYAdbb6Y" version="13.5.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="bcache">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -254,6 +254,12 @@
         </mxCell>
         <mxCell id="qDSHYbJKPOCbUfd6kdmb-27" value="发送消息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
           <mxGeometry x="1140" y="1940" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-28" value="客户端地址转换" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+          <mxGeometry x="890" y="1990" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-29" value="file_to_extents" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+          <mxGeometry x="920" y="2020" width="90" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
