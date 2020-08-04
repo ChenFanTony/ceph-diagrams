@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T06:39:19.940Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="d5Q00gNLFHlAaMV3FIAI" version="13.5.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2020-08-04T07:37:28.213Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="26NJMoc12LcPiJR1aDV2" version="13.5.1" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="bcache">
     <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -311,6 +311,9 @@
         </mxCell>
         <mxCell id="qDSHYbJKPOCbUfd6kdmb-46" value="封装完成一个操作上下文" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
           <mxGeometry x="1325" y="2100" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-47" value="创建ObjectOperation 对象, 封装写操作相关函数" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+          <mxGeometry x="1065" y="1730" width="270" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
