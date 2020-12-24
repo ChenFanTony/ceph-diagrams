@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-24T07:06:37.470Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="SrtpELeBy8DmXTHEugFy" version="14.0.1" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2020-12-24T07:07:09.234Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="xJCSxMyGExMklOPUvtBA" version="14.0.1" type="github" pages="7">
   <diagram id="bm6ZHeyj0mvHZln78BsC" name="Page-1">
     <mxGraphModel dx="1422" dy="1977" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1424,6 +1424,9 @@
         </mxCell>
         <mxCell id="Co-BPygf7ZyeG4ggSL1l-85" value="ssdpool" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="Co-BPygf7ZyeG4ggSL1l-1">
           <mxGeometry x="530" y="1210" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Co-BPygf7ZyeG4ggSL1l-87" value="高性能形式" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="Co-BPygf7ZyeG4ggSL1l-1">
+          <mxGeometry x="50" y="930" width="80" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
