@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T07:55:57.953Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/83.0.4103.61 Chrome/83.0.4103.61 Safari/537.36" etag="Z7Sg4YuNoa5wPEz8JAO1" version="13.5.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-03-24T08:28:31.191Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="yseSAw3JaigpbpeRzQzx" version="14.2.9" type="github" pages="5">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="bcache">
-    <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -433,6 +433,26 @@
         </mxCell>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-46" value="pgmap" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="QtuDEevEZMd4Cmv_G88j-1" vertex="1">
           <mxGeometry x="1031" y="420" width="50" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="HxTv-f7SNYAWtnGJq5iq" name="Page-5">
+    <mxGraphModel dx="1422" dy="808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="GNe9gTxnw_njOSKpDSL5-0" />
+        <mxCell id="GNe9gTxnw_njOSKpDSL5-1" parent="GNe9gTxnw_njOSKpDSL5-0" />
+        <mxCell id="GNe9gTxnw_njOSKpDSL5-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
+          <mxGeometry x="120" y="380" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GNe9gTxnw_njOSKpDSL5-3" value="paddles (result server)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
+          <mxGeometry x="125" y="340" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GNe9gTxnw_njOSKpDSL5-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
+          <mxGeometry x="335" y="380" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GNe9gTxnw_njOSKpDSL5-5" value="pupito (dashboard ui server)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
+          <mxGeometry x="320" y="340" width="170" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
