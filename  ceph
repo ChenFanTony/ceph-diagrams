@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-12T07:34:08.314Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="fwzAurw47kM-Cym77GWm" version="14.2.9" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-04-12T08:11:42.967Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="yWKEK8oQ2BXSfdLJspdd" version="14.2.9" type="github" pages="5">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="bcache">
     <mxGraphModel dx="1422" dy="808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -470,10 +470,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="nE8lL3Do1TDY1Med9DaT-5" value="执行 rbd mirror disable&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
-          <mxGeometry x="480" y="700" width="140" height="20" as="geometry" />
+          <mxGeometry x="820" y="250" width="140" height="20" as="geometry" />
         </mxCell>
         <mxCell id="nE8lL3Do1TDY1Med9DaT-6" value="// update rbd_mirroring 状态设置成image 为disable&lt;br&gt;set_mirror_image&lt;br&gt;// unregister client, update journaling 数据中的client&lt;br&gt;send_unregister_client&lt;br&gt;// 删除journal.XX 中旧的tags, 删除了 *** tag-000000000 ***&lt;br&gt;&amp;nbsp; &amp;nbsp;+---&amp;gt;&amp;nbsp;expire_tags&lt;br&gt;+---&amp;gt; send_notify_mirroring_watcher (异步动作)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
-          <mxGeometry x="650" y="660" width="330" height="100" as="geometry" />
+          <mxGeometry x="760" y="355" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-9" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;exitX=-0.009;exitY=0.446;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="GNe9gTxnw_njOSKpDSL5-1" source="nE8lL3Do1TDY1Med9DaT-6" target="nE8lL3Do1TDY1Med9DaT-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="540" as="sourcePoint" />
+            <mxPoint x="490" y="490" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
