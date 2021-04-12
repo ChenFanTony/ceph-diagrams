@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-24T08:47:20.075Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="sh_8j3eRtFyQ88uoOt0e" version="14.2.9" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-04-12T07:05:12.407Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="nil0PTjnH3f0pQzFMZxL" version="14.2.9" type="github" pages="5">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="bcache">
     <mxGraphModel dx="1422" dy="808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -77,7 +77,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ir96EEGhkpDtgr7c7ac5" name="Page-2">
-    <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="avSVtnbKmz9LwsWl66Yq-0" />
         <mxCell id="avSVtnbKmz9LwsWl66Yq-1" parent="avSVtnbKmz9LwsWl66Yq-0" />
@@ -100,7 +100,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="9_wrJb5P939UYjTDKGNb" name="ceph-client">
-    <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="3nQj0UOYoZfFufUBl6tc-0" />
         <mxCell id="3nQj0UOYoZfFufUBl6tc-1" parent="3nQj0UOYoZfFufUBl6tc-0" />
@@ -122,69 +122,69 @@
         <mxCell id="3nQj0UOYoZfFufUBl6tc-7" value="读写:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="78" y="1178" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="ZrB4824951tR8lwVxA4--6" value="RadosClient:: public dispatcher" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="ZrB4824951tR8lwVxA4--6" value="RadosClient:: public dispatcher" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="895" y="1120" width="150" height="164" as="geometry">
             <mxRectangle x="895" y="1120" width="210" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZrB4824951tR8lwVxA4--7" value="bool _dispatch(Message *m);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ZrB4824951tR8lwVxA4--6">
+        <mxCell id="ZrB4824951tR8lwVxA4--7" value="bool _dispatch(Message *m);" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="ZrB4824951tR8lwVxA4--6" vertex="1">
           <mxGeometry y="26" width="150" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="ZrB4824951tR8lwVxA4--12" value="Messenger *messenger;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ZrB4824951tR8lwVxA4--6">
+        <mxCell id="ZrB4824951tR8lwVxA4--12" value="Messenger *messenger;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="ZrB4824951tR8lwVxA4--6" vertex="1">
           <mxGeometry y="52" width="150" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="ZrB4824951tR8lwVxA4--8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="ZrB4824951tR8lwVxA4--6">
+        <mxCell id="ZrB4824951tR8lwVxA4--8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="ZrB4824951tR8lwVxA4--6" vertex="1">
           <mxGeometry y="78" width="150" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="ZrB4824951tR8lwVxA4--10" value="Messenger *messenger;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ZrB4824951tR8lwVxA4--6">
+        <mxCell id="ZrB4824951tR8lwVxA4--10" value="Messenger *messenger;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="ZrB4824951tR8lwVxA4--6" vertex="1">
           <mxGeometry y="86" width="150" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="ZrB4824951tR8lwVxA4--13" value="state;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ZrB4824951tR8lwVxA4--6">
+        <mxCell id="ZrB4824951tR8lwVxA4--13" value="state;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="ZrB4824951tR8lwVxA4--6" vertex="1">
           <mxGeometry y="112" width="150" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="ZrB4824951tR8lwVxA4--11" value="Objecter *objecter;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ZrB4824951tR8lwVxA4--6">
+        <mxCell id="ZrB4824951tR8lwVxA4--11" value="Objecter *objecter;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="ZrB4824951tR8lwVxA4--6" vertex="1">
           <mxGeometry y="138" width="150" height="26" as="geometry" />
         </mxCell>
         <mxCell id="3nQj0UOYoZfFufUBl6tc-8" value="&lt;div&gt;#include &amp;lt;iostream&amp;gt;&lt;/div&gt;&lt;div&gt;#include &amp;lt;string&amp;gt;&lt;/div&gt;&lt;div&gt;#include &amp;lt;rados/librados.hpp&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;int main(int argc, const char **argv)&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /* Continued from previous C++ example, where cluster handle and&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;* connection are established. First declare an I/O Context.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*/&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; librados::IoCtx io_ctx;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; const char *pool_name = &quot;data&quot;;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ret = cluster.ioctx_create(pool_name, io_ctx);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (ret &amp;lt; 0) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; std::cerr &amp;lt;&amp;lt; &quot;Couldn&#39;t set up ioctx! error &quot; &amp;lt;&amp;lt; ret &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; exit(EXIT_FAILURE);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; } else {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; std::cout &amp;lt;&amp;lt; &quot;Created an ioctx for the pool.&quot; &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /* Write an object synchronously. */&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; librados::bufferlist bl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; bl.append(&quot;Hello World!&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ret = io_ctx.write_full(&quot;hw&quot;, bl);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (ret &amp;lt; 0) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; std::cerr &amp;lt;&amp;lt; &quot;Couldn&#39;t write object! error &quot; &amp;lt;&amp;lt; ret &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; exit(EXIT_FAILURE);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; } else {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; std::cout &amp;lt;&amp;lt; &quot;Wrote new object &#39;hw&#39; &quot; &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /*&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;* Add an xattr to the object.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*/&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; librados::bufferlist lang_bl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; lang_bl.append(&quot;en_US&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ret = io_ctx.setxattr(&quot;hw&quot;, &quot;lang&quot;, lang_bl);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (ret &amp;lt; 0) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; std::cerr &amp;lt;&amp;lt; &quot;failed to set xattr version entry! error &quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;lt;&amp;lt; ret &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; exit(EXIT_FAILURE);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; } else {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; std::cout &amp;lt;&amp;lt; &quot;Set the xattr &#39;lang&#39; on our object!&quot; &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /*&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;* Read the object back asynchronously.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*/&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; librados::bufferlist read_buf;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; int read_len = 4194304;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; //Create I/O Completion.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; librados::AioCompletion *read_completion = librados::Rados::aio_create_completion();&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; //Send read request.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ret = io_ctx.aio_read(&quot;hw&quot;, read_completion, &amp;amp;read_buf, read_len, 0);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (ret &amp;lt; 0) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; std::cerr &amp;lt;&amp;lt; &quot;Couldn&#39;t start read object! error &quot; &amp;lt;&amp;lt; ret &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; exit(EXIT_FAILURE);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // Wait for the request to complete, and check that it succeeded.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; read_completion-&amp;gt;wait_for_complete();&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ret = read_completion-&amp;gt;get_return_value();&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (ret &amp;lt; 0) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; std::cerr &amp;lt;&amp;lt; &quot;Couldn&#39;t read object! error &quot; &amp;lt;&amp;lt; ret &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; exit(EXIT_FAILURE);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; } else {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; std::cout &amp;lt;&amp;lt; &quot;Read object hw asynchronously with contents.\n&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;lt;&amp;lt; read_buf.c_str() &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /*&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;* Read the xattr.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*/&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; librados::bufferlist lang_res;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ret = io_ctx.getxattr(&quot;hw&quot;, &quot;lang&quot;, lang_res);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (ret &amp;lt; 0) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; std::cerr &amp;lt;&amp;lt; &quot;failed to get xattr version entry! error &quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;lt;&amp;lt; ret &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; exit(EXIT_FAILURE);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; } else {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; std::cout &amp;lt;&amp;lt; &quot;Got the xattr &#39;lang&#39; from object hw!&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;lt;&amp;lt; lang_res.c_str() &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /*&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;* Remove the xattr.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*/&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ret = io_ctx.rmxattr(&quot;hw&quot;, &quot;lang&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (ret &amp;lt; 0) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; std::cerr &amp;lt;&amp;lt; &quot;Failed to remove xattr! error &quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;lt;&amp;lt; ret &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; exit(EXIT_FAILURE);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; } else {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; std::cout &amp;lt;&amp;lt; &quot;Removed the xattr &#39;lang&#39; from our object!&quot; &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; /*&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;* Remove the object.&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;*/&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ret = io_ctx.remove(&quot;hw&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (ret &amp;lt; 0) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; std::cerr &amp;lt;&amp;lt; &quot;Couldn&#39;t remove object! error &quot; &amp;lt;&amp;lt; ret &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; exit(EXIT_FAILURE);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; } else {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; std::cout &amp;lt;&amp;lt; &quot;Removed object &#39;hw&#39;.&quot; &amp;lt;&amp;lt; std::endl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;io_ctx.close();&lt;/div&gt;&lt;div&gt;cluster.shutdown();&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="78" y="1200" width="530" height="1870" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-31" value="ObjectOperation" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-31" value="ObjectOperation" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="890" y="2130" width="160" height="86" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-32" value="vector&lt;OSDOp&gt; ops " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="qDSHYbJKPOCbUfd6kdmb-31">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-32" value="vector&lt;OSDOp&gt; ops " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qDSHYbJKPOCbUfd6kdmb-31" vertex="1">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-33" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="qDSHYbJKPOCbUfd6kdmb-31">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-33" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="qDSHYbJKPOCbUfd6kdmb-31" vertex="1">
           <mxGeometry y="52" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-34" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="qDSHYbJKPOCbUfd6kdmb-31">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-34" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qDSHYbJKPOCbUfd6kdmb-31" vertex="1">
           <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-36" value="OSDOp" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-36" value="OSDOp" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="1100" y="2130" width="160" height="86" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-37" value="ceph_osd_op op" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="qDSHYbJKPOCbUfd6kdmb-36">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-37" value="ceph_osd_op op" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qDSHYbJKPOCbUfd6kdmb-36" vertex="1">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-38" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="qDSHYbJKPOCbUfd6kdmb-36">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-38" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="qDSHYbJKPOCbUfd6kdmb-36" vertex="1">
           <mxGeometry y="52" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-39" value="sobject_t soid" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="qDSHYbJKPOCbUfd6kdmb-36">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-39" value="sobject_t soid" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qDSHYbJKPOCbUfd6kdmb-36" vertex="1">
           <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-40" value="Op" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-40" value="Op" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="1320" y="2129" width="160" height="112" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-41" value="OSDSession session" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="qDSHYbJKPOCbUfd6kdmb-40">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-41" value="OSDSession session" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qDSHYbJKPOCbUfd6kdmb-40" vertex="1">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-42" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="qDSHYbJKPOCbUfd6kdmb-40">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-42" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="qDSHYbJKPOCbUfd6kdmb-40" vertex="1">
           <mxGeometry y="52" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-43" value="op_target_t target" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="qDSHYbJKPOCbUfd6kdmb-40">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-43" value="op_target_t target" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qDSHYbJKPOCbUfd6kdmb-40" vertex="1">
           <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-45" value="vector&lt;OSDOp&gt; op" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="qDSHYbJKPOCbUfd6kdmb-40">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-45" value="vector&lt;OSDOp&gt; op" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="qDSHYbJKPOCbUfd6kdmb-40" vertex="1">
           <mxGeometry y="86" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="3nQj0UOYoZfFufUBl6tc-9" value="librbd:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
@@ -199,127 +199,127 @@
         <mxCell id="3nQj0UOYoZfFufUBl6tc-12" value="rbd image 读写流程:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="930" y="110" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="ZrB4824951tR8lwVxA4--0" value="client 3类" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="ZrB4824951tR8lwVxA4--0" value="client 3类" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="900" y="850" width="70" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="ZrB4824951tR8lwVxA4--1" value="1. rados Client" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="ZrB4824951tR8lwVxA4--1" value="1. rados Client" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="900" y="880" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="ZrB4824951tR8lwVxA4--2" value="2. ioctxImpl" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="ZrB4824951tR8lwVxA4--2" value="2. ioctxImpl" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="895" y="910" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="ZrB4824951tR8lwVxA4--3" value="3. objecter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="ZrB4824951tR8lwVxA4--3" value="3. objecter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="900" y="940" width="70" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="ZrB4824951tR8lwVxA4--4" value="radosclient.h" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="ZrB4824951tR8lwVxA4--4" value="radosclient.h" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="900" y="1000" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="ZrB4824951tR8lwVxA4--5" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;class librados::radosClient:: public dispatcher {&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;messager,&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="ZrB4824951tR8lwVxA4--5" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;class librados::radosClient:: public dispatcher {&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;messager,&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="895" y="1040" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="3nQj0UOYoZfFufUBl6tc-1" source="qDSHYbJKPOCbUfd6kdmb-0">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="3nQj0UOYoZfFufUBl6tc-1" source="qDSHYbJKPOCbUfd6kdmb-0" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="995" y="1410" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-0" value="librados::RadosClient::connect()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-0" value="librados::RadosClient::connect()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="900" y="1350" width="190" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-1" value="client&amp;nbsp; connect 创建流程" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-1" value="client&amp;nbsp; connect 创建流程" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="895" y="1330" width="140" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="3nQj0UOYoZfFufUBl6tc-1" source="qDSHYbJKPOCbUfd6kdmb-4" target="qDSHYbJKPOCbUfd6kdmb-5">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="3nQj0UOYoZfFufUBl6tc-1" source="qDSHYbJKPOCbUfd6kdmb-4" target="qDSHYbJKPOCbUfd6kdmb-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-4" value="monclient.build_initial_monmap();" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-4" value="monclient.build_initial_monmap();" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="920" y="1410" width="190" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="3nQj0UOYoZfFufUBl6tc-1" source="qDSHYbJKPOCbUfd6kdmb-5" target="qDSHYbJKPOCbUfd6kdmb-6">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="3nQj0UOYoZfFufUBl6tc-1" source="qDSHYbJKPOCbUfd6kdmb-5" target="qDSHYbJKPOCbUfd6kdmb-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-5" value="messenger = Messenger::create_client_messenger(cct, &quot;radosclient&quot;);" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-5" value="messenger = Messenger::create_client_messenger(cct, &quot;radosclient&quot;);" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="920" y="1460" width="390" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-6" value="&lt;div&gt;/创建objecter并初始化&lt;/div&gt;&lt;div&gt;&amp;nbsp; objecter = new (std::nothrow) Objecter()&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-6" value="&lt;div&gt;/创建objecter并初始化&lt;/div&gt;&lt;div&gt;&amp;nbsp; objecter = new (std::nothrow) Objecter()&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="1000" y="1510" width="230" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-9" value="RadosClient::mon_command_async" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-9" value="RadosClient::mon_command_async" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="890" y="1590" width="210" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-10" value="RadosClient::osd_command" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-10" value="RadosClient::osd_command" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="895" y="1620" width="170" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-11" value="client 给mon osd 命令:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-11" value="client 给mon osd 命令:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="880" y="1570" width="140" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-12" value="client 写操作:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-12" value="client 写操作:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="880" y="1690" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-13" value="librados::IoCtxImpl::write" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-13" value="librados::IoCtxImpl::write" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="895" y="1730" width="150" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-14" value="librados::IoCtxImpl::operate" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-14" value="librados::IoCtxImpl::operate" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="920" y="1760" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-15" value="Objecter::op_submit" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-15" value="Objecter::op_submit" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="975" y="1820" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-16" value="objecter-&amp;gt;prepare_mutate_op&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-16" value="objecter-&amp;gt;prepare_mutate_op&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="935" y="1790" width="180" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-19" value="Objecter:_calc_target" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-19" value="Objecter:_calc_target" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="990" y="1850" width="130" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-20" value="将ObjectOperation 封装成OP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-20" value="将ObjectOperation 封装成OP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="1115" y="1790" width="170" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-21" value="计算目标 OSD" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-21" value="计算目标 OSD" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="1120" y="1850" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-22" value="Objecter:: _get_session()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-22" value="Objecter:: _get_session()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="990" y="1880" width="150" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-23" value="获得目标osd 的连接" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-23" value="获得目标osd 的连接" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="1150" y="1880" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-24" value="Objecter:: prepare_osd_op" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-24" value="Objecter:: prepare_osd_op" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="990" y="1910" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-25" value="准备请求消息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-25" value="准备请求消息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="1150" y="1910" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-26" value="Objecter:: send_op()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-26" value="Objecter:: send_op()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="995" y="1940" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-27" value="发送消息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-27" value="发送消息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="1140" y="1940" width="60" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-28" value="客户端地址转换" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-28" value="客户端地址转换" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="890" y="1990" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-29" value="file_to_extents:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-29" value="file_to_extents:" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="915" y="2020" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-30" value="当有stripe 配置的时候将线性地址转换成obj 的object_extents" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-30" value="当有stripe 配置的时候将线性地址转换成obj 的object_extents" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="935" y="2050" width="340" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-35" value="封装多个对象操作" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-35" value="封装多个对象操作" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="910" y="2100" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-44" value="封装对象的一个操作" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-44" value="封装对象的一个操作" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="1120" y="2100" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-46" value="封装完成一个操作上下文" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-46" value="封装完成一个操作上下文" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="1325" y="2099" width="150" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="qDSHYbJKPOCbUfd6kdmb-47" value="创建ObjectOperation 对象, 封装写操作相关函数" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="3nQj0UOYoZfFufUBl6tc-1">
+        <mxCell id="qDSHYbJKPOCbUfd6kdmb-47" value="创建ObjectOperation 对象, 封装写操作相关函数" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="3nQj0UOYoZfFufUBl6tc-1" vertex="1">
           <mxGeometry x="1065" y="1730" width="270" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="2iWp6vcSyRTvD-q_VDee" name="OSD 处理">
-    <mxGraphModel dx="1422" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="QtuDEevEZMd4Cmv_G88j-0" />
         <mxCell id="QtuDEevEZMd4Cmv_G88j-1" parent="QtuDEevEZMd4Cmv_G88j-0" />
@@ -442,29 +442,32 @@
       <root>
         <mxCell id="GNe9gTxnw_njOSKpDSL5-0" />
         <mxCell id="GNe9gTxnw_njOSKpDSL5-1" parent="GNe9gTxnw_njOSKpDSL5-0" />
-        <mxCell id="GNe9gTxnw_njOSKpDSL5-6" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
-          <mxGeometry x="80" y="300" width="420" height="230" as="geometry" />
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-0" value="&lt;div&gt;rbd_mirror_image_state_check (30s 定时timer)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;+---&amp;gt;&amp;nbsp; bootstrap&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;// open local image, 有journaling feature,&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;// 会alloc一个mirror_uuid的tag,*** tag-0000000000 ***&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;+---&amp;gt; open image&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;// 拷贝远端镜像&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;+---&amp;gt; image_sync (异步动作)&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;lt;---+ send_notify_sync_request&lt;/div&gt;&lt;div&gt;&amp;nbsp;+----&amp;gt; start_replayer&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;// 包含uuid 和 predecessor的 tag, *** tag000000002 ***&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;+---&amp;gt; allocate_local_tag&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;+---&amp;gt; process_entry&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
+          <mxGeometry x="60" y="265" width="320" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="GNe9gTxnw_njOSKpDSL5-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
-          <mxGeometry x="120" y="380" width="140" height="50" as="geometry" />
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-1" value="rbd mirror 目的端流程更新image流程" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
+          <mxGeometry x="50" y="250" width="210" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="GNe9gTxnw_njOSKpDSL5-3" value="paddles (result server)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
-          <mxGeometry x="130" y="395" width="130" height="20" as="geometry" />
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-2" value="执行 rbd mirror image promote --force&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
+          <mxGeometry x="450" y="250" width="220" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="GNe9gTxnw_njOSKpDSL5-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
-          <mxGeometry x="120" y="450" width="140" height="50" as="geometry" />
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="GNe9gTxnw_njOSKpDSL5-1" source="nE8lL3Do1TDY1Med9DaT-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="460" />
+              <mxPoint x="400" y="460" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="GNe9gTxnw_njOSKpDSL5-5" value="pupito (dashboard ui server)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
-          <mxGeometry x="120" y="465" width="170" height="20" as="geometry" />
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-3" value="// 执行force后, 会通过journal 的librbd 接口执行&lt;br&gt;// 包含一个空的mirror_uuid *** tag-00000000001 ***&lt;br&gt;&amp;nbsp; &amp;nbsp;allocate_tag&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;// 异步触发 listener&lt;br&gt;handle_metadata_updated&lt;br&gt;+---&amp;gt;&amp;nbsp;get_tags&lt;br&gt;&amp;nbsp; &amp;lt;---+&amp;nbsp;handle_refresh_metadata&lt;br&gt;// 计算 promoted_to_primary = (!was_tag_owner &amp;amp;&amp;amp; is_tag_owner(m_lock));&lt;br&gt;// 因为计算的is_tag_owner 已经包含了最新 *** tag-000000002 *** 导致&lt;br&gt;// promoted_to_primary 为false 无法执行以下导致无法停止imageReplayer&lt;br&gt;// listener-&amp;gt;handle_promoted();" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
+          <mxGeometry x="450" y="325" width="420" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="GNe9gTxnw_njOSKpDSL5-7" value="teuthology&amp;nbsp; schdule" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
-          <mxGeometry x="310" y="380" width="160" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="GNe9gTxnw_njOSKpDSL5-8" value="teuthology&amp;nbsp; work" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
-          <mxGeometry x="310" y="450" width="160" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="GNe9gTxnw_njOSKpDSL5-9" value="Manager node" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
-          <mxGeometry x="100" y="320" width="110" height="30" as="geometry" />
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-4" value="" style="endArrow=classic;html=1;" edge="1" parent="GNe9gTxnw_njOSKpDSL5-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="371" as="sourcePoint" />
+            <mxPoint x="350" y="371" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
