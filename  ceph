@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-12T11:55:32.551Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="EBeslHDwNglX9Jdp1ClZ" version="14.2.9" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-04-12T12:04:33.776Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="O9UyAaEPxzJkyP__xz_u" version="14.2.9" type="github" pages="5">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="bcache">
     <mxGraphModel dx="1422" dy="808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -442,6 +442,13 @@
       <root>
         <mxCell id="GNe9gTxnw_njOSKpDSL5-0" />
         <mxCell id="GNe9gTxnw_njOSKpDSL5-1" parent="GNe9gTxnw_njOSKpDSL5-0" />
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.746;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="GNe9gTxnw_njOSKpDSL5-1" source="nE8lL3Do1TDY1Med9DaT-0" target="nE8lL3Do1TDY1Med9DaT-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="557" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="nE8lL3Do1TDY1Med9DaT-0" value="&lt;div&gt;rbd_mirror_image_state_check (30s 定时timer)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;+---&amp;gt;&amp;nbsp; bootstrap&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;// open local image, 有journaling feature,&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;// 会alloc一个mirror_uuid的tag,*** tag-0000000000 ***&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;+---&amp;gt; open image&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;// 拷贝远端镜像等&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;+---&amp;gt; image_sync&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;lt;---+ send_notify_sync_request&lt;/div&gt;&lt;div&gt;&amp;nbsp;+----&amp;gt; start_replayer&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;// 包含uuid 和 predecessor的 tag, *** tag000000002 ***&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;+---&amp;gt; allocate_local_tag&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;+---&amp;gt; process_entry&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
           <mxGeometry x="50" y="270" width="320" height="190" as="geometry" />
         </mxCell>
@@ -449,37 +456,48 @@
           <mxGeometry x="50" y="250" width="210" height="20" as="geometry" />
         </mxCell>
         <mxCell id="nE8lL3Do1TDY1Med9DaT-2" value="执行 rbd mirror image promote --force&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
-          <mxGeometry x="450" y="250" width="220" height="20" as="geometry" />
+          <mxGeometry x="550" y="250" width="220" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nE8lL3Do1TDY1Med9DaT-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="GNe9gTxnw_njOSKpDSL5-1" source="nE8lL3Do1TDY1Med9DaT-3">
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="GNe9gTxnw_njOSKpDSL5-1" source="nE8lL3Do1TDY1Med9DaT-3" target="nE8lL3Do1TDY1Med9DaT-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="GNe9gTxnw_njOSKpDSL5-1" source="nE8lL3Do1TDY1Med9DaT-3" target="nE8lL3Do1TDY1Med9DaT-10">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="350" y="460" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="400" y="460" />
-              <mxPoint x="400" y="460" />
+              <mxPoint x="660" y="430" />
+              <mxPoint x="660" y="430" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="nE8lL3Do1TDY1Med9DaT-3" value="// 执行force后, 会通过journal 的librbd 接口执行&lt;br&gt;// 包含一个空的mirror_uuid *** tag-00000000001 ***&lt;br&gt;&amp;nbsp; &amp;nbsp;allocate_tag&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;// 异步触发 listener&lt;br&gt;handle_metadata_updated&lt;br&gt;+---&amp;gt;&amp;nbsp;get_tags&lt;br&gt;&amp;nbsp; &amp;lt;---+&amp;nbsp;handle_refresh_metadata&lt;br&gt;// 计算 promoted_to_primary = (!was_tag_owner &amp;amp;&amp;amp; is_tag_owner(m_lock));&lt;br&gt;// 因为计算的is_tag_owner 已经包含了最新 *** tag-000000002 *** 导致&lt;br&gt;// promoted_to_primary 为false 无法执行以下导致无法停止imageReplayer&lt;br&gt;// listener-&amp;gt;handle_promoted();" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
-          <mxGeometry x="450" y="325" width="420" height="220" as="geometry" />
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-3" value="// 执行force后, 会通过journal 的librbd 接口执行&lt;br&gt;// 包含一个空的mirror_uuid *** tag-00000000001 ***&lt;br&gt;&amp;nbsp; &amp;nbsp;allocate_tag&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;html=1;labelBorderColor=none;labelBackgroundColor=none;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
+          <mxGeometry x="530" y="315" width="290" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="nE8lL3Do1TDY1Med9DaT-4" value="" style="endArrow=classic;html=1;" edge="1" parent="GNe9gTxnw_njOSKpDSL5-1">
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-4" value="" style="endArrow=classic;html=1;exitX=-0.017;exitY=0.26;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.003;entryY=0.511;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="GNe9gTxnw_njOSKpDSL5-1" source="nE8lL3Do1TDY1Med9DaT-3" target="nE8lL3Do1TDY1Med9DaT-0">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="440" y="371" as="sourcePoint" />
-            <mxPoint x="350" y="371" as="targetPoint" />
+            <mxPoint x="450" y="355" as="sourcePoint" />
+            <mxPoint x="380" y="365" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nE8lL3Do1TDY1Med9DaT-5" value="执行 rbd mirror disable&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
-          <mxGeometry x="820" y="250" width="140" height="20" as="geometry" />
+          <mxGeometry x="920" y="250" width="140" height="20" as="geometry" />
         </mxCell>
         <mxCell id="nE8lL3Do1TDY1Med9DaT-6" value="// update rbd_mirroring 状态设置成image 为disable&lt;br&gt;set_mirror_image&lt;br&gt;// unregister client, update journaling 数据中的client&lt;br&gt;send_unregister_client&lt;br&gt;// 删除journal.XX 中旧的tags, 删除了 *** tag-000000000 ***&lt;br&gt;&amp;nbsp; &amp;nbsp;+---&amp;gt;&amp;nbsp;expire_tags&lt;br&gt;+---&amp;gt; send_notify_mirroring_watcher (异步动作)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
-          <mxGeometry x="760" y="355" width="330" height="100" as="geometry" />
+          <mxGeometry x="910" y="315" width="330" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="nE8lL3Do1TDY1Med9DaT-9" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;exitX=-0.009;exitY=0.446;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="GNe9gTxnw_njOSKpDSL5-1" source="nE8lL3Do1TDY1Med9DaT-6" target="nE8lL3Do1TDY1Med9DaT-0">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="440" y="540" as="sourcePoint" />
-            <mxPoint x="490" y="490" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-10" value="&lt;br&gt;&lt;span&gt;handle_metadata_updated&lt;/span&gt;&lt;br&gt;&lt;span&gt;+---&amp;gt;&amp;nbsp;get_tags&lt;/span&gt;&lt;br&gt;&lt;span&gt;&amp;nbsp; &amp;lt;---+&amp;nbsp;handle_refresh_metadata&lt;/span&gt;&lt;br&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; 如果journal的状态是 STATE_READY&amp;nbsp; 或者 is_journal_replaying 状态往下触发promote, 否则就直接返回&lt;/span&gt;&lt;br&gt;&lt;span&gt;// 计算 promoted_to_primary = (!was_tag_owner &amp;amp;&amp;amp; is_tag_owner(m_lock));&lt;/span&gt;&lt;br&gt;&lt;span&gt;// 因为计算的is_tag_owner 已经包含了最新 *** tag-000000002 *** 导致&lt;/span&gt;&lt;br&gt;&lt;span&gt;// promoted_to_primary 为false 无法执行以下导致无法停止imageReplayer&lt;/span&gt;&lt;br&gt;&lt;span&gt;// listener-&amp;gt;handle_promoted();&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
+          <mxGeometry x="450" y="460" width="580" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-11" value="image_sync 阶段" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
+          <mxGeometry x="380" y="340" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-17" value="接着diable mirror" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
+          <mxGeometry x="785" y="340" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-18" value="&lt;span style=&quot;text-align: left&quot;&gt;alloc_tag 异步触发 listener 更新&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
+          <mxGeometry x="590" y="420" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nE8lL3Do1TDY1Med9DaT-19" value="&lt;span style=&quot;text-align: left&quot;&gt;alloc tag 异步触发 listener 更新&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="GNe9gTxnw_njOSKpDSL5-1">
+          <mxGeometry x="145" y="510" width="180" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
