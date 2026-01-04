@@ -37,6 +37,9 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="块存储云产品安装时,&amp;nbsp; license指定是否支持加密功能" vertex="1">
           <mxGeometry height="40" width="300" x="100" y="55" as="geometry" />
         </mxCell>
+        <mxCell id="sjxD1XnoycQuhz903Nwa-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段二:" vertex="1">
+          <mxGeometry height="30" width="60" x="30" y="140" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
