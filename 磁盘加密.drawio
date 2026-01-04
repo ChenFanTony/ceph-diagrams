@@ -14,7 +14,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="cinder" vertex="1">
-          <mxGeometry height="60" width="120" x="210" y="90" as="geometry" />
+          <mxGeometry height="60" width="120" x="250" y="130" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="nova" vertex="1">
           <mxGeometry height="60" width="120" x="210" y="290" as="geometry" />
@@ -22,11 +22,11 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段一:" vertex="1">
           <mxGeometry height="30" width="60" x="30" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="指定volume_type: 加密" vertex="1">
-          <mxGeometry height="30" width="180" x="40" y="280" as="geometry" />
+        <mxCell id="sjxD1XnoycQuhz903Nwa-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="创建 volume_type: 加密类型" vertex="1">
+          <mxGeometry height="30" width="180" x="80" y="60" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="创建加密磁盘" vertex="1">
-          <mxGeometry height="30" width="100" x="90" y="60" as="geometry" />
+          <mxGeometry height="30" width="100" x="70" y="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
