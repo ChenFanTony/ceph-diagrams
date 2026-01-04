@@ -36,7 +36,7 @@
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-21" connectable="0" parent="sjxD1XnoycQuhz903Nwa-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="(args: cipher, size)" vertex="1">
           <mxGeometry relative="1" x="-0.4759" y="3" as="geometry">
-            <mxPoint y="-27" as="offset" />
+            <mxPoint y="-17" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="cinder" vertex="1">
