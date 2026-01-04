@@ -22,6 +22,9 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段一:" vertex="1">
           <mxGeometry height="30" width="60" x="30" y="60" as="geometry" />
         </mxCell>
+        <mxCell id="sjxD1XnoycQuhz903Nwa-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="volume_type: 加密" vertex="1">
+          <mxGeometry height="30" width="180" x="110" y="70" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
