@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="sjxD1XnoycQuhz903Nwa-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="barbicon sever" vertex="1">
-          <mxGeometry height="60" width="120" x="590" y="430" as="geometry" />
+          <mxGeometry height="60" width="120" x="550" y="360" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-3" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
@@ -13,11 +13,23 @@
             <mxPoint x="460" y="10" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="sjxD1XnoycQuhz903Nwa-16" edge="1" parent="1" source="sjxD1XnoycQuhz903Nwa-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="sjxD1XnoycQuhz903Nwa-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjxD1XnoycQuhz903Nwa-17" connectable="0" parent="sjxD1XnoycQuhz903Nwa-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="lib: keymanager API" vertex="1">
+          <mxGeometry relative="1" x="-0.8759" y="-1" as="geometry">
+            <mxPoint y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="cinder" vertex="1">
-          <mxGeometry height="60" width="120" x="230" y="560" as="geometry" />
+          <mxGeometry height="50" width="120" x="250" y="290" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="nova" vertex="1">
-          <mxGeometry height="60" width="120" x="230" y="655" as="geometry" />
+          <mxGeometry height="60" width="120" x="250" y="520" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段一:" vertex="1">
           <mxGeometry height="30" width="60" x="30" y="60" as="geometry" />
@@ -28,8 +40,8 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="创建新的 volume_type 云硬盘类型, 根据已有的类型填写backend name , 并勾选 &quot;加密属性&quot; (lic 控制)" vertex="1">
           <mxGeometry height="50" width="310" x="100" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="创建加密磁盘" vertex="1">
-          <mxGeometry height="30" width="100" x="90" y="580" as="geometry" />
+        <mxCell id="sjxD1XnoycQuhz903Nwa-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="通过加密云盘类型来创建加密云盘" vertex="1">
+          <mxGeometry height="30" width="100" x="120" y="305" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="默认指定加密luks v1 的 cipher +&amp;nbsp; size 为: 如 aes + 256" vertex="1">
           <mxGeometry height="40" width="340" x="85" y="210" as="geometry" />
