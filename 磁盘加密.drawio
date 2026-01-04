@@ -20,7 +20,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-17" connectable="0" parent="sjxD1XnoycQuhz903Nwa-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="lib: keymanager API" vertex="1">
+        <mxCell id="sjxD1XnoycQuhz903Nwa-17" connectable="0" parent="sjxD1XnoycQuhz903Nwa-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="lib: Callen API" vertex="1">
           <mxGeometry relative="1" x="-0.8759" y="-1" as="geometry">
             <mxPoint y="2" as="offset" />
           </mxGeometry>
