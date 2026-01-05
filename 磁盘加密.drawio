@@ -143,7 +143,7 @@
           <mxGeometry height="30" width="60" x="110" y="1100" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="后端存储" vertex="1">
-          <mxGeometry height="60" width="120" x="550" y="1110" as="geometry" />
+          <mxGeometry height="60" width="120" x="540" y="1109" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
