@@ -42,8 +42,11 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="cinder" vertex="1">
           <mxGeometry height="50" width="120" x="250" y="330" as="geometry" />
         </mxCell>
+        <mxCell id="sjxD1XnoycQuhz903Nwa-43" edge="1" parent="1" source="sjxD1XnoycQuhz903Nwa-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="sjxD1XnoycQuhz903Nwa-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="nova" vertex="1">
-          <mxGeometry height="60" width="120" x="270" y="1140" as="geometry" />
+          <mxGeometry height="60" width="120" x="250" y="1040" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段一:" vertex="1">
           <mxGeometry height="30" width="60" x="30" y="60" as="geometry" />
@@ -117,27 +120,30 @@
           <mxGeometry height="50" width="120" x="250" y="630" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="后端存储" vertex="1">
-          <mxGeometry height="60" width="120" x="550" y="680" as="geometry" />
+          <mxGeometry height="60" width="120" x="540" y="820" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-34" edge="1" parent="1" source="sjxD1XnoycQuhz903Nwa-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="sjxD1XnoycQuhz903Nwa-33">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="310" y="710" />
+              <mxPoint x="310" y="850" />
             </Array>
             <mxPoint x="530" y="710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="创建加密云盘:&amp;nbsp;虚机里面看到的和大小是和非加密盘一样的，不会损失用户实际可用空间.&lt;br&gt;1. 不同的驱动实现:&lt;br&gt;rbd: 实现 create_volume 接口, 在接口中初始化luks卷, 卷大小包含了luks header 大小.&amp;nbsp;&lt;br&gt;&lt;br&gt;iscsi: 默认创建卷时不生成包含luks头的卷." vertex="1">
+        <mxCell id="sjxD1XnoycQuhz903Nwa-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="创建加密云盘:&amp;nbsp;虚机里面看到的和大小是和非加密盘一样的，不会损失用户实际可用空间.&lt;br&gt;1. 不同的驱动实现:&lt;br&gt;rbd: 实现 create_volume 接口, 在接口中通过密钥+ cipher初始化luks卷, 卷大小包含了luks header 大小.&amp;nbsp;&lt;br&gt;&lt;br&gt;iscsi: 默认创建卷时不生成包含luks头的卷." vertex="1">
           <mxGeometry height="130" width="360" x="75" y="710" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="step 3.2:" vertex="1">
-          <mxGeometry height="30" width="60" x="800" y="670" as="geometry" />
+          <mxGeometry height="30" width="60" x="110" y="860" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="创建系统盘:&amp;nbsp;&lt;br&gt;1. 不同的驱动实现:&lt;br&gt;rbd: 实现 copy_image_to_volume 接口, 通过cinder节点将image (未加密) down下来, copy image到volume中, 最后再卸载.&lt;br&gt;&lt;br&gt;iscsi: XX?" vertex="1">
-          <mxGeometry height="130" width="360" x="800" y="710" as="geometry" />
+          <mxGeometry height="130" width="360" x="75" y="890" as="geometry" />
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-41" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="step 3.1:" vertex="1">
-          <mxGeometry height="30" width="60" x="110" y="880" as="geometry" />
+        <mxCell id="sjxD1XnoycQuhz903Nwa-41" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="step 4:" vertex="1">
+          <mxGeometry height="30" width="60" x="110" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="sjxD1XnoycQuhz903Nwa-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="后端存储" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="1110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
