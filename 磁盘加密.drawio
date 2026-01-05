@@ -127,7 +127,7 @@
             <mxPoint x="530" y="710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="创建加密云盘:&amp;nbsp;虚机里面看到的和大小是和非加密盘一样的，不会损失用户实际可用空间.&lt;br&gt;1. 不同的驱动实现:&lt;br&gt;rbd: create_volume 接口支持luks 加密卷, 卷大小包含了luks header 大小.&amp;nbsp;&lt;br&gt;&lt;br&gt;iscsi: 挂载时临时生成 header, 对磁盘头进行拷贝?" vertex="1">
+        <mxCell id="sjxD1XnoycQuhz903Nwa-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="创建加密云盘:&amp;nbsp;虚机里面看到的和大小是和非加密盘一样的，不会损失用户实际可用空间.&lt;br&gt;1. 不同的驱动实现:&lt;br&gt;rbd: 实现 create_volume 接口, 在接口中初始化luks卷, 卷大小包含了luks header 大小.&amp;nbsp;&lt;br&gt;&lt;br&gt;iscsi: 默认创建卷时不生成包含luks头的卷." vertex="1">
           <mxGeometry height="130" width="360" x="75" y="710" as="geometry" />
         </mxCell>
       </root>
