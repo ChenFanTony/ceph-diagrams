@@ -31,7 +31,7 @@
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-17" connectable="0" parent="sjxD1XnoycQuhz903Nwa-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="lib: Callen API" vertex="1">
           <mxGeometry relative="1" x="-0.8759" y="-1" as="geometry">
-            <mxPoint x="131" y="32" as="offset" />
+            <mxPoint x="111" y="34" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-21" connectable="0" parent="sjxD1XnoycQuhz903Nwa-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="(args: cipher, size)" vertex="1">
@@ -90,7 +90,7 @@
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-27" connectable="0" parent="sjxD1XnoycQuhz903Nwa-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="lib: Callen API" vertex="1">
           <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="8" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-28" connectable="0" parent="sjxD1XnoycQuhz903Nwa-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="get: (arg: key id)" vertex="1">
