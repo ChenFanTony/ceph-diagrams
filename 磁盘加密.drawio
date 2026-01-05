@@ -111,7 +111,7 @@
           <mxGeometry height="30" width="160" x="75" y="530" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="step 3:" vertex="1">
-          <mxGeometry height="30" width="60" x="110" y="620" as="geometry" />
+          <mxGeometry height="30" width="60" x="110" y="670" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="cinder" vertex="1">
           <mxGeometry height="50" width="120" x="250" y="630" as="geometry" />
@@ -127,8 +127,8 @@
             <mxPoint x="530" y="710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1. 不同的驱动需要实现 create_volume 接口支持luks 加密&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. 如何给磁盘加密头 XXXX? 不同的驱动需要不一样?&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="130" width="165" x="85" y="620" as="geometry" />
+        <mxCell id="sjxD1XnoycQuhz903Nwa-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="创建加密云盘:&lt;br&gt;1. 不同的驱动实现:&lt;br&gt;rbd: create_volume 接口支持luks 加密&lt;br&gt;&lt;br&gt;iscsi: 挂载时临时生成 header, 对磁盘头进行拷贝" vertex="1">
+          <mxGeometry height="130" width="360" x="75" y="680" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
