@@ -53,7 +53,7 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-48" edge="1" parent="1" source="sjxD1XnoycQuhz903Nwa-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="sjxD1XnoycQuhz903Nwa-47">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="310" y="1220" />
+              <mxPoint x="310" y="1550" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -63,7 +63,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="nova" vertex="1">
-          <mxGeometry height="60" width="120" x="250" y="1040" as="geometry" />
+          <mxGeometry height="60" width="120" x="250" y="1370" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段一:" vertex="1">
           <mxGeometry height="30" width="60" x="30" y="60" as="geometry" />
@@ -157,13 +157,13 @@
           <mxGeometry height="130" width="385" x="75" y="890" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="后端存储" vertex="1">
-          <mxGeometry height="60" width="120" x="550" y="1265" as="geometry" />
+          <mxGeometry height="60" width="120" x="550" y="1595" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-47" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="barbicon sever" vertex="1">
-          <mxGeometry height="60" width="120" x="550" y="1190" as="geometry" />
+          <mxGeometry height="60" width="120" x="550" y="1520" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="挂载系统盘/云盘时, 获取密钥明文 +云盘类型cipher+size, 先创建secret xml,&amp;nbsp;调用后端驱动 intial connection 挂载云盘.&lt;div&gt;启动qemu时, 绑定 secret到卷, 读写磁盘对卷进行encode/decode.&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="237.5" x="62.5" y="1110" as="geometry" />
+          <mxGeometry height="100" width="237.5" x="62.5" y="1440" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-52" edge="1" parent="1" source="sjxD1XnoycQuhz903Nwa-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="sjxD1XnoycQuhz903Nwa-5">
           <mxGeometry relative="1" as="geometry" />
@@ -174,10 +174,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="cinder" vertex="1">
-          <mxGeometry height="50" width="120" x="550" y="1045" as="geometry" />
+          <mxGeometry height="50" width="120" x="550" y="1375" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-54" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段四:" vertex="1">
-          <mxGeometry height="30" width="60" x="50" y="1070" as="geometry" />
+          <mxGeometry height="30" width="60" x="50" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="sjxD1XnoycQuhz903Nwa-55" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="创建系统盘:&amp;nbsp;&lt;br&gt;1. 不同的驱动实现:&lt;br&gt;rbd: 包含 step 3.1,实现 copy_image_to_volume 接口, 通过cinder控制节点将image (未加密) down下来, rbd import to volume.&lt;br&gt;&lt;br&gt;iscsi: 包含 step 3.1, cinder通过 os-brick 父类 copy_image_to_volume 实现, 通过cinder控制节点将 image (未加密) down下来, 挂载卷后, 会执行format luks卷, 然后 copy image(未加密)到volume中, 最后再卸载." vertex="1">
+          <mxGeometry height="130" width="385" x="75" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="sjxD1XnoycQuhz903Nwa-56" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="step 3.3:" vertex="1">
+          <mxGeometry height="30" width="60" x="120" y="1050" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
