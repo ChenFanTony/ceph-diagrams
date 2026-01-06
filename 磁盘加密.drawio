@@ -207,7 +207,7 @@
           <mxGeometry height="60" width="415" y="1910" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-63" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="barbicon sever" vertex="1">
-          <mxGeometry height="60" width="120" x="550" y="710" as="geometry" />
+          <mxGeometry height="60" width="120" x="550" y="660" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
