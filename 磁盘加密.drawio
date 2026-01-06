@@ -74,7 +74,7 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="创建新的 volume_type 云硬盘类型, 根据已有的类型填写backend name , 并勾选 &quot;加密属性&quot; (lic 控制)" vertex="1">
           <mxGeometry height="50" width="310" x="100" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="通过加密云盘类型来创建加密云盘" vertex="1">
+        <mxCell id="sjxD1XnoycQuhz903Nwa-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="通过加密云盘类型来创建加密云盘" vertex="1">
           <mxGeometry height="30" width="100" x="100" y="290" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="默认指定加密luks v1 的 cipher +&amp;nbsp; size 为: 如 aes + 256" vertex="1">
