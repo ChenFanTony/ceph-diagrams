@@ -89,8 +89,8 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段三:" vertex="1">
           <mxGeometry height="30" width="60" x="30" y="310" as="geometry" />
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="选择云盘类型创建云盘, 可支持自定义密钥, 绑定后, db自动保存: key id 绑定 volume uuid" vertex="1">
-          <mxGeometry height="30" width="205" x="75" y="390" as="geometry" />
+        <mxCell id="sjxD1XnoycQuhz903Nwa-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="选择云盘类型创建云盘, 可支持自定义密钥, 绑定云盘和已创建的密钥后, db自动保存: key id 绑定 volume uuid" vertex="1">
+          <mxGeometry height="30" width="205" x="47.5" y="390" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="step 1:" vertex="1">
           <mxGeometry height="30" width="60" x="110" y="340" as="geometry" />
