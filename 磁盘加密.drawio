@@ -53,7 +53,7 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-48" edge="1" parent="1" source="sjxD1XnoycQuhz903Nwa-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="sjxD1XnoycQuhz903Nwa-47">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="310" y="1430" />
+              <mxPoint x="310" y="1350" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -63,7 +63,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="nova" vertex="1">
-          <mxGeometry height="60" width="120" x="250" y="1290" as="geometry" />
+          <mxGeometry height="60" width="120" x="250" y="1210" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段一:" vertex="1">
           <mxGeometry height="30" width="60" x="30" y="60" as="geometry" />
@@ -89,11 +89,11 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段三:" vertex="1">
           <mxGeometry height="30" width="60" x="30" y="310" as="geometry" />
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="选择云盘类型创建云盘, , db自动保存: key id 绑定 volume uuid" vertex="1">
-          <mxGeometry height="30" width="205" x="70" y="360" as="geometry" />
+        <mxCell id="sjxD1XnoycQuhz903Nwa-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="选择云盘类型创建云盘, 可支持自定义密钥, 绑定后, db自动保存: key id 绑定 volume uuid" vertex="1">
+          <mxGeometry height="30" width="205" x="75" y="390" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="step 1:" vertex="1">
-          <mxGeometry height="30" width="60" x="110" y="330" as="geometry" />
+          <mxGeometry height="30" width="60" x="110" y="340" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="step 2:" vertex="1">
           <mxGeometry height="30" width="60" x="110" y="500" as="geometry" />
@@ -131,39 +131,39 @@
           <mxGeometry height="30" width="160" x="75" y="530" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="step 3.1:" vertex="1">
-          <mxGeometry height="30" width="60" x="115" y="750" as="geometry" />
+          <mxGeometry height="30" width="60" x="115" y="670" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="cinder" vertex="1">
-          <mxGeometry height="50" width="120" x="255" y="710" as="geometry" />
+          <mxGeometry height="50" width="120" x="255" y="630" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="后端存储" vertex="1">
-          <mxGeometry height="60" width="120" x="545" y="900" as="geometry" />
+          <mxGeometry height="60" width="120" x="545" y="820" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-34" edge="1" parent="1" source="sjxD1XnoycQuhz903Nwa-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="sjxD1XnoycQuhz903Nwa-33">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="315" y="930" />
+              <mxPoint x="315" y="850" />
             </Array>
-            <mxPoint x="535" y="790" as="targetPoint" />
+            <mxPoint x="535" y="710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="创建加密云盘:&amp;nbsp;虚机里面看到的和大小是和非加密盘一样的，不会损失用户实际可用空间.&lt;br&gt;1. 不同的驱动实现:&lt;br&gt;rbd: 实现 create_volume 接口, 在接口中通过密钥+ cipher初始化luks卷, 卷大小包含了luks header 大小.&amp;nbsp;&lt;br&gt;&lt;br&gt;iscsi: 默认创建卷时不生成包含luks头的卷. 卷大小为实际创盘大小, 因此相对rbd 磁盘大小小luks header 大小." vertex="1">
-          <mxGeometry height="130" width="360" x="80" y="790" as="geometry" />
+          <mxGeometry height="130" width="360" x="80" y="710" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="step 3.2:" vertex="1">
-          <mxGeometry height="30" width="60" x="115" y="940" as="geometry" />
+          <mxGeometry height="30" width="60" x="115" y="860" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="创建系统盘:&amp;nbsp;&lt;br&gt;1. 不同的驱动实现:&lt;br&gt;rbd: 包含 step 3.1,实现 copy_image_to_volume 接口, 通过cinder控制节点将image (未加密) down下来,&amp;nbsp; image 转换成加密镜像, 才 rbd import to volume.&lt;br&gt;&lt;br&gt;iscsi: 包含 step 3.1, cinder通过 os-brick 父类 copy_image_to_volume 实现, 通过cinder控制节点将 image (未加密) down下来, 挂载卷后, 会执行format luks卷, 然后 copy image(未加密)到volume中, 最后再卸载." vertex="1">
-          <mxGeometry height="130" width="415" x="80" y="971" as="geometry" />
+          <mxGeometry height="130" width="415" x="80" y="891" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="后端存储" vertex="1">
-          <mxGeometry height="60" width="120" x="550" y="1470" as="geometry" />
+          <mxGeometry height="60" width="120" x="550" y="1390" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-47" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="barbicon sever" vertex="1">
-          <mxGeometry height="60" width="120" x="550" y="1400" as="geometry" />
+          <mxGeometry height="60" width="120" x="550" y="1320" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="nova挂载系统盘/云盘时, 获取密钥明文 +云盘类型cipher+size, 先创建secret xml,&amp;nbsp;调用后端驱动 intial connection 挂载云盘.&lt;div&gt;启动qemu时, 绑定 secret到卷, 读写磁盘对卷进行encode/decode.&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="237.5" x="62.5" y="1360" as="geometry" />
+          <mxGeometry height="100" width="237.5" x="62.5" y="1280" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-52" edge="1" parent="1" source="sjxD1XnoycQuhz903Nwa-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="sjxD1XnoycQuhz903Nwa-5">
           <mxGeometry relative="1" as="geometry" />
@@ -174,28 +174,28 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="cinder" vertex="1">
-          <mxGeometry height="50" width="120" x="550" y="1295" as="geometry" />
+          <mxGeometry height="50" width="120" x="550" y="1215" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-54" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段五:" vertex="1">
-          <mxGeometry height="30" width="60" x="50" y="1320" as="geometry" />
+          <mxGeometry height="30" width="60" x="50" y="1240" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-55" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="通过加密镜像创建系统盘:&amp;nbsp;&lt;br&gt;1. 上传加密镜像&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 用户上传加密镜像, 需要镜像文件和密钥, 镜像文件可以通过glance 上传,并要设置 cipher + size + key id, 然后密钥需要上传到babican (*证书和密钥云产品*)&lt;br&gt;2. 从加密云盘转换成加密镜像, 自动设置&amp;nbsp;cipher + size + key id, barbican 默认有keyid.&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="130" width="385" x="75" y="1160" as="geometry" />
+          <mxGeometry height="130" width="385" x="75" y="1080" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-58" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段四:" vertex="1">
-          <mxGeometry height="30" width="60" x="50" y="1120" as="geometry" />
+          <mxGeometry height="30" width="60" x="50" y="1040" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-59" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="glance" vertex="1">
-          <mxGeometry height="50" width="120" x="550" y="1220" as="geometry" />
+          <mxGeometry height="50" width="120" x="550" y="1140" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-60" edge="1" parent="1" source="sjxD1XnoycQuhz903Nwa-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="sjxD1XnoycQuhz903Nwa-59">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="610" y="1280" />
-              <mxPoint x="610" y="1280" />
+              <mxPoint x="610" y="1200" />
+              <mxPoint x="610" y="1200" />
             </Array>
-            <mxPoint x="685" y="1325" as="sourcePoint" />
-            <mxPoint x="385" y="1330" as="targetPoint" />
+            <mxPoint x="685" y="1245" as="sourcePoint" />
+            <mxPoint x="385" y="1250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-61" connectable="0" parent="sjxD1XnoycQuhz903Nwa-60" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="系统盘: get cipher + size, key id" vertex="1">
@@ -204,21 +204,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-62" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段六: 从快照创建卷, 快照, 克隆接口不需要特殊处理&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 8.2875pt; font-family: LiberationMono;&quot;&gt;get_volume_stats 不会特殊处理&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;扩容磁盘大小可能要特别处理&lt;br&gt;&lt;br&gt;盘删掉了, 密钥是否自动删除&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="415" x="15" y="1600" as="geometry" />
-        </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-63" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="barbicon sever" vertex="1">
-          <mxGeometry height="60" width="120" x="545" y="670" as="geometry" />
+          <mxGeometry height="60" width="415" x="15" y="1520" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-64" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="需支持自定义密钥/导入密钥&lt;br&gt;加密类型: 新类型 云盘加密" vertex="1">
-          <mxGeometry height="30" width="170" x="520" y="750" as="geometry" />
-        </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-65" edge="1" parent="1" source="sjxD1XnoycQuhz903Nwa-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.008;entryY=0.617;entryDx=0;entryDy=0;entryPerimeter=0;" target="sjxD1XnoycQuhz903Nwa-63">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-66" connectable="0" parent="sjxD1XnoycQuhz903Nwa-65" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="自定义密钥绑定" vertex="1">
-          <mxGeometry relative="1" x="-0.2762" y="2" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+          <mxGeometry height="30" width="170" x="520" y="490" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
