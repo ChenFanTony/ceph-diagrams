@@ -213,7 +213,10 @@
           <mxGeometry height="50" width="300" x="70" y="1870" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-69" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="luks替换密钥: 是否存在数据重写风险&lt;br&gt;1. slot id 被overwrite&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. 8 个 slot id, openstack / qemu 是否支持多slot 加密&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="490" x="75" y="1940" as="geometry" />
+          <mxGeometry height="60" width="490" x="70" y="2000" as="geometry" />
+        </mxCell>
+        <mxCell id="sjxD1XnoycQuhz903Nwa-70" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="疑问点:" vertex="1">
+          <mxGeometry height="30" width="60" x="47.5" y="1960" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
