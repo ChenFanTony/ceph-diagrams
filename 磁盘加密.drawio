@@ -209,6 +209,9 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-64" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="需支持自定义密钥/导入密钥&lt;br&gt;加密类型: 新类型 云盘加密" vertex="1">
           <mxGeometry height="30" width="170" x="520" y="490" as="geometry" />
         </mxCell>
+        <mxCell id="sjxD1XnoycQuhz903Nwa-68" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="克隆云主机, 密钥会被替换: 默认 clone_volume 会原盘自动替换成新的密钥" vertex="1">
+          <mxGeometry height="50" width="300" x="70" y="1870" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
