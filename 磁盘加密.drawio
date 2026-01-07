@@ -203,7 +203,7 @@
             <mxPoint x="2" y="4" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-62" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段六: 从快照创建卷, 快照, 克隆接口不需要特殊处理&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 8.2875pt; font-family: LiberationMono;&quot;&gt;get_volume_stats 不会特殊处理&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;扩容磁盘大小可能要特别处理&lt;br&gt;&lt;br&gt;盘删掉了, 密钥是否自动删除&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="sjxD1XnoycQuhz903Nwa-62" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段六: 从快照创建卷, 快照, 克隆接口不需要特殊处理&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 8.2875pt; font-family: LiberationMono;&quot;&gt;get_volume_stats 不会特殊处理&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;扩容磁盘大小可能要特别处理&lt;br&gt;&lt;br&gt;盘删掉了, 密钥会自动删除&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="415" x="10" y="1760" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-64" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="需支持自定义密钥/导入密钥&lt;br&gt;加密类型: 新类型 云盘加密" vertex="1">
