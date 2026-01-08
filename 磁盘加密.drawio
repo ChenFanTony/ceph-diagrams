@@ -225,10 +225,10 @@
           <mxGeometry height="30" width="60" x="42.5" y="1940" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-73" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="产品说明/限制:" vertex="1">
-          <mxGeometry height="30" width="110" x="37.5" y="2090" as="geometry" />
+          <mxGeometry height="30" width="110" x="40" y="2070" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-74" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1.&amp;nbsp;密钥丢失后数据永远无法修复" vertex="1">
-          <mxGeometry height="30" width="330" x="67.5" y="2130" as="geometry" />
+          <mxGeometry height="30" width="330" x="55" y="2100" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-75" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="6. 备份云产品, 备份和恢复功能, 对于加密盘数据不感知, 可支持&lt;br&gt;7. 跨存储迁移, 类似备份云产品也可以支持" vertex="1">
           <mxGeometry height="110" width="290" x="40" y="1770" as="geometry" />
