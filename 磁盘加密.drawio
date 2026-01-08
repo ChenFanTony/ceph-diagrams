@@ -128,7 +128,7 @@
           <mxGeometry height="50" width="120" x="250" y="500" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="根据key id 获取密钥(明文)" vertex="1">
-          <mxGeometry height="30" width="160" x="50" y="530" as="geometry" />
+          <mxGeometry height="30" width="160" x="45" y="530" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="step 3.1:" vertex="1">
           <mxGeometry height="30" width="60" x="110" y="650" as="geometry" />
@@ -154,7 +154,7 @@
           <mxGeometry height="30" width="60" x="115" y="860" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="创建系统盘:&amp;nbsp;&lt;br&gt;1. 不同的驱动实现:&lt;br&gt;rbd: 包含 step 3.1,实现 copy_image_to_volume 接口, 通过cinder控制节点将image (未加密) down下来,&amp;nbsp; image 转换成加密镜像, 才 rbd import to volume.&lt;br&gt;&lt;br&gt;iscsi: 包含 step 3.1, cinder通过 os-brick 父类 copy_image_to_volume 实现, 通过cinder控制节点将 image (未加密) down下来, 挂载存储卷后, 会执行format luks卷, 然后 copy image(未加密)到volume中, 最后再卸载." vertex="1">
-          <mxGeometry height="130" width="415" x="80" y="891" as="geometry" />
+          <mxGeometry height="130" width="415" x="50" y="890" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="后端存储" vertex="1">
           <mxGeometry height="60" width="120" x="545" y="1630" as="geometry" />
