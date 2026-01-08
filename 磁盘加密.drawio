@@ -213,22 +213,25 @@
           <mxGeometry height="50" width="300" x="40" y="1740" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-69" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="luks替换密钥: 是否存在数据重写风险&lt;br&gt;1. slot id 被overwrite&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. 8 个 slot id, openstack / qemu 是否支持多slot 加密&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="490" x="62.5" y="1880" as="geometry" />
+          <mxGeometry height="60" width="490" x="55" y="1990" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-70" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="疑问点:" vertex="1">
-          <mxGeometry height="30" width="60" x="182.5" y="1830" as="geometry" />
+          <mxGeometry height="30" width="60" x="175" y="1940" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-71" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="当前对于加密云盘的key 列表不显示" vertex="1">
           <mxGeometry height="30" width="130" x="550" y="360" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-72" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段六:" vertex="1">
-          <mxGeometry height="30" width="60" x="50" y="1830" as="geometry" />
+          <mxGeometry height="30" width="60" x="42.5" y="1940" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-73" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="产品说明/限制:" vertex="1">
-          <mxGeometry height="30" width="110" x="45" y="1980" as="geometry" />
+          <mxGeometry height="30" width="110" x="37.5" y="2090" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-74" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1.&amp;nbsp;密钥丢失后数据永远无法修复" vertex="1">
-          <mxGeometry height="30" width="330" x="75" y="2020" as="geometry" />
+          <mxGeometry height="30" width="330" x="67.5" y="2130" as="geometry" />
+        </mxCell>
+        <mxCell id="sjxD1XnoycQuhz903Nwa-75" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="6. 备份云产品" vertex="1">
+          <mxGeometry height="110" width="290" x="45" y="1790" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
