@@ -224,6 +224,9 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-72" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="阶段六:" vertex="1">
           <mxGeometry height="30" width="60" x="50" y="1670" as="geometry" />
         </mxCell>
+        <mxCell id="sjxD1XnoycQuhz903Nwa-73" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="产品说明/限制:" vertex="1">
+          <mxGeometry height="30" width="110" x="40" y="2070" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
