@@ -227,6 +227,9 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-73" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="产品说明/限制:" vertex="1">
           <mxGeometry height="30" width="110" x="40" y="2070" as="geometry" />
         </mxCell>
+        <mxCell id="sjxD1XnoycQuhz903Nwa-74" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1.&amp;nbsp;密钥丢失后数据永远无法修复" vertex="1">
+          <mxGeometry height="30" width="330" x="70" y="2110" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
