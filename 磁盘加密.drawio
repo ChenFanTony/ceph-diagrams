@@ -239,6 +239,12 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-77" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#CC0000,#CC0000);" value="&lt;b&gt;liscense 需开发&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="60" x="530" y="60" as="geometry" />
         </mxCell>
+        <mxCell id="sjxD1XnoycQuhz903Nwa-80" edge="1" parent="1" source="sjxD1XnoycQuhz903Nwa-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="sjxD1XnoycQuhz903Nwa-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sjxD1XnoycQuhz903Nwa-79" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="依赖已对接的存储, 对接会创建新的磁盘类型" vertex="1">
+          <mxGeometry height="30" width="170" x="480" y="140" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
