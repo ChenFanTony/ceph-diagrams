@@ -162,8 +162,8 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-47" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="barbicon sever" vertex="1">
           <mxGeometry height="60" width="120" x="550" y="1470" as="geometry" />
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="nova挂载系统盘/云盘时, 根据volume信息, 获取密钥明文 +云盘类型cipher+size, 先创建secret xml,&amp;nbsp;调用后端驱动 intial connection 挂载云盘.&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;qemu&lt;/span&gt;启动&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;时, 绑定secret到卷, 读写磁盘时qemu 加密驱动拦截io 对卷进行encode/decode.&lt;/span&gt;" vertex="1">
-          <mxGeometry height="100" width="280" x="30" y="1420" as="geometry" />
+        <mxCell id="sjxD1XnoycQuhz903Nwa-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="挂载系统盘/云盘时, 由cinder 根据volume信息, 获取密钥明文 +云盘类型cipher+size, &lt;br&gt;之前针对 iscsi 云盘(非rbd盘)未格式化磁盘:&lt;br&gt;会在控制节点参考阶段三(step 3)先挂载, 再格式化云盘, 卸载.&lt;br&gt;nova: 先创建secret xml,&amp;nbsp;调用后端驱动 intial_connection 挂载云盘.&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;qemu&lt;/span&gt;启动&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;时, 绑定secret到卷, 读写磁盘时qemu 加密驱动拦截io 对卷进行encode/decode.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="260" x="30" y="1440" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-52" edge="1" parent="1" source="sjxD1XnoycQuhz903Nwa-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="sjxD1XnoycQuhz903Nwa-5">
           <mxGeometry relative="1" as="geometry" />
@@ -177,7 +177,7 @@
           <mxGeometry height="50" width="120" x="550" y="1365" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-54" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="其他" vertex="1">
-          <mxGeometry height="30" width="60" x="47.5" y="1570" as="geometry" />
+          <mxGeometry height="30" width="60" x="30" y="1600" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-55" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="通过加密镜像创建系统盘:&amp;nbsp;&lt;br&gt;1. 上传加密镜像&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 用户上传加密镜像, 需要镜像文件和密钥, 镜像文件可以通过glance 上传,并要设置 cipher + size + key id, &lt;font style=&quot;color: rgb(204, 0, 0);&quot;&gt;然后密钥需要上传到babican (*证书和密钥云产品*)&lt;/font&gt;&lt;br&gt;2. 从加密云盘转换成加密镜像, 自动设置&amp;nbsp;cipher + size + key id, barbican 默认已有keyid 继承自云盘.&lt;br&gt;&lt;div&gt;&lt;br&gt;创建系统盘时:&lt;br&gt;rbd:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;包含 step 3.1, 实现 copy_image_to_volume 接口, 通过cinder控制节点将image (加密) down下来, 直接 rbd import to volume. 密钥为更新成镜像密钥, 那么就不支持自定义密钥(rbd 暂时不支持).&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;iscsi:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;包含 step 3.1, cinder通过 os-brick 父类 copy_image_to_volume 实现, 通过cinder控制节点将 image (加密) down下来, 挂载存储卷后, 直接 copy image(加密)到volume中, 最后再卸载. 密钥为镜像密钥, 不支持自定义密钥. (&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 0, 0), rgb(204, 0, 0));&quot;&gt;但是iscsi这种可以通过挂载, cryptosetup changekey来修改密钥&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;font style=&quot;color: light-dark(rgb(204, 0, 0), rgb(204, 0, 0));&quot;&gt;#%%&lt;/font&gt; 华为: evs 支持在创建系统盘的时候如果指定密钥, 系统会覆盖加密镜像密钥.&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="270" width="635" x="42.5" y="1020" as="geometry" />
@@ -203,35 +203,29 @@
             <mxPoint x="2" y="4" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-62" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;&quot;&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;1. 快照接口不需要特殊处理, 密钥继承原盘.&amp;nbsp; 从快照创建新卷, 是否可以更改密钥 ?&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#cc0000&quot;&gt;#%% 阿里云 可以更改密钥; 阿里云对密钥分2中, 平台自动创建的叫服务密钥, 导入或其他叫主密钥 华为云: 用户的主密钥CMK（Customer Master Key），第二层级为数据密钥DK（Data Key）&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#cc0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;2. 克隆接口, 默认密钥继承原盘, 考虑可以修改密钥?&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;2. get_volume_stats 不会特殊处理&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;3. 扩容磁盘大小可能要特别处理&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;4. 盘删掉了, 密钥会自动删除&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="130" width="515" x="45" y="1630" as="geometry" />
+        <mxCell id="sjxD1XnoycQuhz903Nwa-62" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;&quot;&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;1. 快照接口不需要特殊处理, 密钥继承原盘.&amp;nbsp; 从快照创建新卷, 是否可以更改密钥 ?&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#cc0000&quot;&gt;#%% 阿里云 可以更改密钥; 阿里云对密钥分2中, 平台自动创建的叫服务密钥, 导入或其他叫主密钥 华为云: 用户的主密钥CMK（Customer Master Key），第二层级为数据密钥DK（Data Key）&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#cc0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;2. 克隆接口, 默认密钥继承原盘, 考虑可以修改密钥?&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;2. get_volume_stats 不会特殊处理&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;3. 扩容磁盘大小可能要特别处理&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;4. 盘删掉了, 密钥会自动删除&lt;br&gt;&lt;br&gt;5. 克隆云主机, 密钥会被替换: 默认 clone_volume 会原盘自动替换成新的密钥, 基于cryptsetup changekey 命令, 目前只iscsi 支持替换密钥, 而rbd 没有替换&lt;br&gt;&lt;br&gt;6. 备份云产品, 备份和恢复功能, 对于加密盘数据不感知, 可支持&lt;br&gt;7. 跨存储迁移, 类似备份云产品也可以支持&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="515" x="30" y="1710" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-64" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontColor=#CC0000;" value="&lt;font style=&quot;&quot;&gt;&lt;b&gt;需支持自定义密钥/导入密钥&lt;/b&gt;&lt;br&gt;&lt;b&gt;加密类型: ENCRYPT_DECRYPT&lt;br&gt;支持算法: AES + 256 / SM2&lt;/b&gt;&lt;br&gt;&lt;b&gt;其他高级功能: 如计划删除密钥, 密钥更新等&amp;nbsp;&lt;br&gt;组件依赖关系: 删除密钥时如果有引用需要提示, 还是文字说明提示?&lt;/b&gt;&lt;/font&gt;" vertex="1">
           <mxGeometry height="30" width="260" x="530" y="510" as="geometry" />
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-68" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="5. 克隆云主机, 密钥会被替换: 默认 clone_volume 会原盘自动替换成新的密钥, 基于cryptsetup changekey 命令, 目前只iscsi 支持替换密钥, 而rbd 没有替换" vertex="1">
-          <mxGeometry height="50" width="300" x="42.5" y="1800" as="geometry" />
-        </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-69" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="luks替换密钥: 是否存在数据重写风险&lt;br&gt;1. slot id 被overwrite&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. 8 个 slot id, openstack / qemu 是否支持多slot 加密&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="490" x="55" y="1990" as="geometry" />
+          <mxGeometry height="60" width="490" x="30" y="2030" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-70" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="疑问点:" vertex="1">
-          <mxGeometry height="30" width="60" x="40" y="1950" as="geometry" />
+          <mxGeometry height="30" width="60" x="25" y="1990" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-71" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="当前对于加密云盘的key 列表不显示" vertex="1">
           <mxGeometry height="30" width="130" x="550" y="360" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-73" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="产品说明/限制:" vertex="1">
-          <mxGeometry height="30" width="110" x="40" y="2070" as="geometry" />
+          <mxGeometry height="30" width="110" x="15" y="2110" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-74" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1.&amp;nbsp;密钥丢失后数据永远无法修复" vertex="1">
-          <mxGeometry height="30" width="330" x="55" y="2100" as="geometry" />
-        </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-75" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="6. 备份云产品, 备份和恢复功能, 对于加密盘数据不感知, 可支持&lt;br&gt;7. 跨存储迁移, 类似备份云产品也可以支持" vertex="1">
-          <mxGeometry height="110" width="290" x="40" y="1840" as="geometry" />
+          <mxGeometry height="30" width="330" x="30" y="2150" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-76" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="其他功能说明:&lt;br&gt;1.&amp;nbsp;将非加密云盘转换为加密云盘 : 不需要支持&lt;br&gt;#%%: 将非加密快照复制成加密快照, 或复制加密自定义镜像完成&lt;br&gt;#%%:&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;转换数据加密状态:&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;如果您需要对云硬盘现有数据从非加密状态转换为加密状态，建议您使用 Linux 下的 rsync 命令或者 Windows 下的&amp;nbsp; robocopy 命令，将数据从非加密盘复制到新创建的加密盘上。&lt;/span&gt;&lt;div&gt;如果您需要对云硬盘现有数据从加密状态转换为非加密状态，则建议您使用相同命令将数据从加密盘复制到新创建的非加密盘上。&lt;/div&gt;&lt;div&gt;2. 加密原理要补充&lt;br&gt;3. LVM的盘, 驱动是否支持加密?&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="150" width="330" x="480" y="1960" as="geometry" />
+          <mxGeometry height="150" width="330" x="440" y="2020" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-78" edge="1" parent="1" source="sjxD1XnoycQuhz903Nwa-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="sjxD1XnoycQuhz903Nwa-13" value="">
           <mxGeometry relative="1" as="geometry" />
