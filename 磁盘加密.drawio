@@ -233,8 +233,8 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-75" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="6. 备份云产品, 备份和恢复功能, 对于加密盘数据不感知, 可支持&lt;br&gt;7. 跨存储迁移, 类似备份云产品也可以支持" vertex="1">
           <mxGeometry height="110" width="290" x="40" y="1840" as="geometry" />
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-76" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="其他功能:&lt;br&gt;1.&amp;nbsp;将非加密云盘转换为加密云盘 : 不需要支持&lt;br&gt;#%%: 将非加密快照复制成加密快照, 或复制加密自定义镜像完成&lt;div&gt;2. 加密原理要补充&lt;br&gt;3. LVM的盘, 驱动是否支持加密?&lt;/div&gt;" vertex="1">
-          <mxGeometry height="70" width="350" x="470" y="1810" as="geometry" />
+        <mxCell id="sjxD1XnoycQuhz903Nwa-76" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="其他功能说明:&lt;br&gt;1.&amp;nbsp;将非加密云盘转换为加密云盘 : 不需要支持&lt;br&gt;#%%: 将非加密快照复制成加密快照, 或复制加密自定义镜像完成&lt;br&gt;#%%:&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;转换数据加密状态:&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;如果您需要对云硬盘现有数据从非加密状态转换为加密状态，建议您使用 Linux 下的 rsync 命令或者 Windows 下的&amp;nbsp; robocopy 命令，将数据从非加密盘复制到新创建的加密盘上。&lt;/span&gt;&lt;div&gt;如果您需要对云硬盘现有数据从加密状态转换为非加密状态，则建议您使用相同命令将数据从加密盘复制到新创建的非加密盘上。&lt;/div&gt;&lt;div&gt;2. 加密原理要补充&lt;br&gt;3. LVM的盘, 驱动是否支持加密?&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="330" x="480" y="1960" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
