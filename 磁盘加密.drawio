@@ -77,7 +77,7 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="通过加密云盘类型来创建加密云盘" vertex="1">
           <mxGeometry height="30" width="100" x="100" y="290" as="geometry" />
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="默认只支持指定加密luks v2 的 cipher +&amp;nbsp; size 为: 如 aes + 256, 当前只支持密钥管理 KMS (barbican)" vertex="1">
+        <mxCell id="sjxD1XnoycQuhz903Nwa-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="默认只支持指定加密luks v1 (qemu 不支持V2), cipher +&amp;nbsp; size 为: 如 aes + 256, 当前只支持密钥管理 KMS (barbican)" vertex="1">
           <mxGeometry height="40" width="340" x="85" y="210" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="块存储云产品安装时,&amp;nbsp; license指定块存储云产品是否支持加密功能" vertex="1">
