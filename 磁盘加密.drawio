@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.7">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.0">
   <diagram name="第 1 页" id="jUwy29AcYQmpEwm30NJZ">
     <mxGraphModel dx="1416" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -210,22 +210,22 @@
           <mxGeometry height="30" width="260" x="530" y="510" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-69" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="luks替换密钥: 是否存在数据重写风险&lt;br&gt;1. slot id 被overwrite&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. 8 个 slot id, openstack / qemu 是否支持多slot 加密&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="490" x="50" y="2160" as="geometry" />
+          <mxGeometry height="60" width="490" x="45" y="1990" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-70" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="疑问点:" vertex="1">
-          <mxGeometry height="30" width="60" x="45" y="2120" as="geometry" />
+          <mxGeometry height="30" width="60" x="40" y="1950" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-71" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="当前对于加密云盘的key 列表不显示" vertex="1">
           <mxGeometry height="30" width="130" x="550" y="360" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-73" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="产品说明/限制:" vertex="1">
-          <mxGeometry height="30" width="110" x="35" y="2240" as="geometry" />
+          <mxGeometry height="30" width="110" x="30" y="2070" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-74" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1.&amp;nbsp;密钥丢失后数据永远无法修复" vertex="1">
-          <mxGeometry height="30" width="330" x="50" y="2280" as="geometry" />
+          <mxGeometry height="30" width="330" x="45" y="2110" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-76" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="其他功能说明:&lt;br&gt;1.&amp;nbsp;将非加密云盘转换为加密云盘 : 不需要支持&lt;br&gt;#%%: 将非加密快照复制成加密快照, 或复制加密自定义镜像完成&lt;br&gt;#%%:&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;转换数据加密状态:&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;如果您需要对云硬盘现有数据从非加密状态转换为加密状态，建议您使用 Linux 下的 rsync 命令或者 Windows 下的&amp;nbsp; robocopy 命令，将数据从非加密盘复制到新创建的加密盘上。&lt;/span&gt;&lt;div&gt;如果您需要对云硬盘现有数据从加密状态转换为非加密状态，则建议您使用相同命令将数据从加密盘复制到新创建的非加密盘上。&lt;/div&gt;&lt;div&gt;2. 加密原理要补充&lt;br&gt;3. LVM的盘, 属于 iscsi 的方式映射, 支持.&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="150" width="330" x="460" y="2150" as="geometry" />
+          <mxGeometry height="150" width="330" x="455" y="1980" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-78" edge="1" parent="1" source="sjxD1XnoycQuhz903Nwa-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="sjxD1XnoycQuhz903Nwa-13" value="">
           <mxGeometry relative="1" as="geometry" />
