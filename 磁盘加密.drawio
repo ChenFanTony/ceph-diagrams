@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.1">
   <diagram name="第 1 页" id="jUwy29AcYQmpEwm30NJZ">
     <mxGraphModel dx="1416" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -71,7 +71,7 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-12" edge="1" parent="1" source="sjxD1XnoycQuhz903Nwa-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="sjxD1XnoycQuhz903Nwa-11" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="创建新的 volume_type 云硬盘类型, 根据已有的类型填写backend name , 并勾选 &quot;加密属性&quot; (lic 控制)" vertex="1">
+        <mxCell id="sjxD1XnoycQuhz903Nwa-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="创建新的 volume_type 云硬盘类型, 根据已有的类型绑定backend name , 并需要lic勾选 &quot;加密属性&quot;" vertex="1">
           <mxGeometry height="50" width="310" x="100" y="130" as="geometry" />
         </mxCell>
         <mxCell id="sjxD1XnoycQuhz903Nwa-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="通过加密云盘类型来创建加密云盘" vertex="1">
@@ -236,8 +236,8 @@
         <mxCell id="sjxD1XnoycQuhz903Nwa-80" edge="1" parent="1" source="sjxD1XnoycQuhz903Nwa-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="sjxD1XnoycQuhz903Nwa-7" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sjxD1XnoycQuhz903Nwa-79" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="依赖已对接的存储, 对接会创建新的磁盘类型" vertex="1">
-          <mxGeometry height="30" width="170" x="480" y="140" as="geometry" />
+        <mxCell id="sjxD1XnoycQuhz903Nwa-79" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="依赖已对接的存储, 对于商存对接时会创建新的磁盘类型" vertex="1">
+          <mxGeometry height="30" width="170" x="535" y="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
